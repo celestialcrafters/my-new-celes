@@ -1,0 +1,49 @@
+.swiper-wraper {
+  display: grid !important;
+}
+.swiper{
+    position:static;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    
+    width: 25px;
+    height:25px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    border:2px solid white;
+  color: white;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: -50px;
+    
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: -50px;
+    
+}
+
+
+/* Navigation font start */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: inherit;
+  font-size: inherit;
+}
+.swiper-button-prev::before {
+  content: "<";
+  font-size: 12px; /* Adjust the size of the arrow */
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "";
+  font-size: 12px;
+}
+
+.swiper-button-next:after {
+  content: ">";
+  font-size: 12px; /* Adjust the size of the arrow */
+}

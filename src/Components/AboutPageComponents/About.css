@@ -1,0 +1,66 @@
+.topIntro {
+  background: -webkit-linear-gradient(#144ae8, #0fd0f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mission-vision {
+  background: linear-gradient(#000000, #000000),
+    linear-gradient(to right, #144ae8, #0fd0f9);
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat;
+  border: 4px solid transparent !important;
+}
+
+.done-items {
+  color: hsla(240, 100%, 50%, 1);
+  font-size: 2rem;
+  font-weight: 500;
+  padding-block: 10px;
+}
+
+.text {
+  background-color: hsla(240, 100%, 50%, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  padding: 25px;
+  font-size: 20px;
+  line-height: 2rem;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 70px;
+  width: 100%;
+}
+.team-profile {
+  display: flex;
+}
+.team h1 {
+  line-height: 2.2rem;
+  font-size: 35px;
+  width: 200px;
+  color: rgb(178, 178, 255);
+}
+.team span {
+  color: hsla(240, 100%, 50%, 1);
+}
+
+.icon-arrow {
+  width: 20px;
+  height: 20px;
+  margin-top: 200px;
+  cursor: pointer;
+}
+.icon-down {
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  margin: auto;
+  cursor: pointer;
+}
+.firstpart {
+  display: flex;
+  gap: 0.8rem;
+}
