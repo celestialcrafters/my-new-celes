@@ -39,10 +39,32 @@ const servicesData = [
   },
   {
     id: 6,
-    title: "CONSULTATION & SUPPORT",
+    title: "DIGITAL MARKETING",
     description:
-      "Empower your business with tailored consultation and support services. Our experienced team provides expert advice across various domains, guiding you through today's complexities and positioning you for future success. From strategy implementation to seamless transitions, we're here to ensure your journey is smooth and successful.",
-    image: "../images/support.png",
+      "Elevate your online presence with our comprehensive digital marketing solutions. From search engine optimization (SEO) to targeted social media advertising, we employ cutting-edge strategies to boost your visibility and drive conversions. Let us help you navigate the digital landscape and reach your target audience with precision and impact.",
+    image: "../images/digitalmarketing.png",
+  },
+ 
+  {
+    id: 7,
+    title: "BRANDING",
+    description:
+      "Define your identity and leave a lasting impression with our branding services. We work closely with you to develop a cohesive brand strategy that encapsulates your values, vision, and voice. From logo design to brand messaging, we'll help you tell your story authentically and consistently across all channels, building trust and loyalty among your audience.",
+    image: "../images/branding.png",
+  },
+  {
+    id: 8,
+    title: "SOCIAL MEDIA MANAGEMENT",
+    description:
+      "Harness the power of social media to connect, engage, and grow your audience. Our expert social media management team crafts tailored content, implements strategic campaigns, and monitors analytics to ensure your brand stands out in the crowded digital sphere. Whether it's community building or influencer partnerships, we'll help you cultivate meaningful connections that drive results.",
+    image: "../images/socialmedia.png",
+  },
+  {
+    id: 9,
+    title:"GRAPHICS AND DESIGN",
+    description:
+      "Make a statement with captivating visuals that resonate with your audience. Our talented team of designers combines creativity with technical expertise to deliver stunning graphics that command attention and convey your brand's message effectively. Whether it's website graphics, promotional materials, or packaging design, we'll bring your vision to life with style and flair.",
+    image: "../images/graphic10.png",
   },
 ];
 

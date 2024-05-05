@@ -13,8 +13,8 @@ export const ContactInfo = [
   },
   {
     icon: <RiRedPacketLine />,
-    info: "inquirecelestialcrafters@gmail.com",
-    page: "mailto:inquirecelestialcrafters@gmail.com",
+    info: "info@celestialcrafters.co.ke",
+    page: "mailto:info@celestialcrafters.co.ke",
   },
 ];
 const social = [
@@ -39,17 +39,18 @@ const Footer = () => {
           <div className="flex flex-col gap-1">
             {ContactInfo.map((item, index) => {
               return (
-                <Link
+                <a
                   href={item.page}
                   className="flex gap-4 overflow-x-auto no-scrollbar"
-                  target={item.page === "" ? "" : "_blank"}
+                  target="_blank"
+                  rel="noreferrer"
                   key={index + item.info}
                 >
                   <div className="text-blue-700 text-2xl">{item.icon}</div>
                   <span className="text-white group-hover:text-accent duration-500">
                     {item.info}
                   </span>
-                </Link>
+                </a>
               );
             })}
             <div className="flex items-center gap-4">
@@ -64,7 +65,7 @@ const Footer = () => {
           </Link>
           <p className="pt-3">
             Welcome to Celestial Crafters Tech Company, a dynamic force in the
-            ever-evolving landscape of technology. With a global team of 60
+            ever-evolving landscape of technology. With a global team of 30
             professionals, we are united by our commitment to shaping the future
             of technology while championing diversity.
           </p>

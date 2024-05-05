@@ -3,7 +3,7 @@ const InsightCard = ({ id, imgUrl, title, text, active, handleClick }) => (
   <div
     className={`relative ${
       active === id ? "lg:flex-[3.5] flex-[10] " : "lg:flex-[0.5] flex-[2]"
-    } flex items-center justify-center min-w-[ 170px]  transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
+    } flex items-center justify-center min-w-[170px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
     <img

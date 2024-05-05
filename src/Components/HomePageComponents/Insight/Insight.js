@@ -32,7 +32,7 @@ const Explore = () => {
         
         className={`2xl:max-w-[1280px] w-full mx-auto flex flex-col`}
       >
-        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[100vh] md:min-h-[75vh] lg:min-h-[65vh] gap-5">
+        <div className="mt-[50px] flex lg:flex-row flex-col min-h-[100vh] lg:min-h-[65vh] gap-5">
           {exploreWorlds.map((world, index) => (
             <InsightCard
               key={world.id}
