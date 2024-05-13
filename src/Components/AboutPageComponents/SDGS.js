@@ -2,7 +2,7 @@ const SDGS = () => {
     const celestialCraftersData = [
         {
           id: "celestial_crafters_1",
-          content: "By providing women with access to professional growth opportunities and economic empowerment within the tech industry, Celestial Crafters contributes to poverty alleviation and promotes sustainable development.",
+          content: " With 95% of our team members hailing from world countries, we aim to end poverty in all its forms everywhere. With experience and insights into the challenges faced by communities affected by poverty. This deep understanding allows us to develop innovative solutions that address the root causes of poverty and empower individuals and communities to uplift themselves.",
           imageUrl: "SDGs/E-WEB-Goal-01.png"
         },
         {
@@ -12,7 +12,7 @@ const SDGS = () => {
         },
         {
           id: "celestial_crafters_3",
-          content: "Gender Equality: Celestial Crafters promotes equal opportunities for women within the tech industry through unbiased hiring, professional growth support, and mentorship programs, aiming to reduce gender-based discrimination and violence.",
+          content: "With 75% of the technology industry occupied by men and the Tech industry in Kenya hosting only 15% of women we as celestial crafters are looking to bridge the gender gap and break gender stereotype in the technology sector considering it's male dominated we bring a rich and diverse team of women from all over the globe to empower and enrich their skills equally and take on leadership roles.",
           imageUrl: "SDGs/E-WEB-Goal-05.png"
         },
         {
@@ -27,7 +27,7 @@ const SDGS = () => {
         },
         {
           id: "celestial_crafters_6",
-          content: "Celestial Crafters advocates for inclusive industry policies and transparent monitoring, addressing disparities and inequalities within the technology sector by breaking down barriers and ensuring transparent reporting on gender diversity metrics.",
+          content: "We are committed to reducing inequalities by fostering an inclusive and diverse workforce.We offer a safe and supportive workplace for persons from the LGBTQIA+ community we make them feel valued and respected at our workplace. We also encourage persons with disability to join our team.",
           imageUrl: "SDGs/E-WEB-Goal-10.png"
         },
         {

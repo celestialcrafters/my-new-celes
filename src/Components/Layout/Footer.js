@@ -1,5 +1,3 @@
-import Tele from "../../Assets/icons/Phone.png";
-import Email from "../../Assets/icons/Email.png";
 import Location from "../../Assets/icons/Location.png";
 import copyright from "../../Assets/icons/copyright.png";
 import { FaLinkedin, FaTiktok, FaPhone } from "react-icons/fa";
@@ -64,10 +62,7 @@ const Footer = () => {
             About Us
           </Link>
           <p className="pt-3">
-            Welcome to Celestial Crafters Tech Company, a dynamic force in the
-            ever-evolving landscape of technology. With a global team of 30
-            professionals, we are united by our commitment to shaping the future
-            of technology while championing diversity.
+          At Celestial Crafters, we're more than just a tech company – we're a catalyst for change. With a mission to drive innovation and promote diversity, inclusivity, and women's empowerment, we're reshaping the tech landscape. Our core values of innovation, integrity, teamwork, sustainability, and customer satisfaction guide us in everything we do. From developing cutting-edge solutions to inspiring the next generation of female leaders in STEM, we're committed to making a positive impact. Join us on our journey to bridge the gender gap in tech and create a more equitable and vibrant future for all.
           </p>
         </div>
         <div className="text-white flex flex-col gap-2">
@@ -85,7 +80,7 @@ const Footer = () => {
               to="/services"
               className="block hover:text-blue-700 hover:transition-all hover:duration-100"
             >
-              Project Management
+              Mobile App Development
             </Link>
             <Link
               to="/services"
@@ -103,7 +98,7 @@ const Footer = () => {
               to="/services"
               className="block hover:text-blue-700 hover:transition-all hover:duration-100"
             >
-              Performance Optimization
+              Graphic Design
             </Link>
             <Link
               to="/services"
@@ -134,15 +129,14 @@ const Footer = () => {
         </div>
       </div>
       <hr className="bg-gradient-to-r from-blue-500 to-blue-200 my-10" />
-      <div className="flex lg:justify-between justify-center items-center flex-wrap gap-3">
+      <div className="flex justify-between  items-center flex-wrap gap-3">
         <div className="flex items-center">
           <img src={copyright} alt="Copyright" />
           <p className="text-white ml-2">
             Celestial Crafters 2024 . All rights reserved
           </p>
         </div>
-        <p className="text-white text-center">Designed by Lute Chongo</p>
-        <div className="flex gap-4 flex-[0.3]">
+        <div className="flex gap-4">
           {social.map((item, index) => {
             return (
               <a

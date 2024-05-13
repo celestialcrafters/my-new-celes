@@ -6,7 +6,7 @@ const servicesData = [
     id: 1,
     title: "SOFTWARE DEVELOPMENT",
     description:
-      "Our web development ensures seamless design and functionality across devices, prioritizing user experience. In mobile app development, we excel in creating high-performance, scalable solutions for both iOS and Android.",
+      "software development is at the heart of what we do. We specialize in creating innovative solutions tailored to meet the unique needs of our clients. from static, dynamic to corporate website we got everything under control.",
     image: "../images/softwaredev.png",
   },
   {
@@ -18,9 +18,9 @@ const servicesData = [
   },
   {
     id: 3,
-    title: "PROJECT MANAGEMENT",
+    title: "APP DEVELOPMENT",
     description:
-      "Our premier project management service excels in Agile, Scrum, and Waterfall methodologies, guaranteeing timely, budget-conscious, and high-quality project delivery. With a versatile approach, we expertly manage diverse projects across industries. Count on our experienced teams to guide your projects to success, surpassing strategic goals and expectations.",
+      "Our web development ensures seamless design and functionality across devices, prioritizing user experience. In mobile app development, we excel in creating high-performance, scalable solutions for both iOS and Android.",
     image: "../images/projectmanagemnet.png",
   },
   {

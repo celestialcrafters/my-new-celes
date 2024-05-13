@@ -15,7 +15,7 @@ const mission = [
   {
     topic: "OUR MISSION",
     text1:
-      " Our mission is to equip businesses with cutting-edge solutions, unparalleled expertise, and unwavering support, fostering growth and efficiency.",
+      "  Celestial Crafters' mission is to drive innovation in the technology industry while fostering diversity, inclusivity, and empowerment. We are committed to promoting equality and reducing inequalities by providing equal opportunities for women, individuals from the LGBTQIA+ community, and persons with disabilities. Through our core values of innovation, integrity, teamwork, and sustainability, we strive to inspire the next generation of leaders while breaking down barriers and creating a more equitable and inclusive world.",
     img: "../Assets/BigImages/mission.png",
   },
 ];
@@ -24,7 +24,7 @@ const about = [
   {
     topic: "Our Unique Culture.",
     text1:
-      "At the heart of Celestial Crafters is a unique culture that celebrates diversity and inclusion. Every individual's voice matters, fostering an environment where creativity flourishes.",
+      "With our diverse team spanning the globe, Celestial Crafters leverages a rich tapestry of perspectives, experiences, and cultural insights. Our global presence grants us a unique advantage in understanding and catering to the diverse needs of clients worldwide. By tapping into the collective expertise of team members from Afghanistan to the United States, South Africa to India, Malawi to Ghana, Nigeria to Kenya, we offer innovative solutions that transcend geographical boundaries. This global perspective not only enriches our creativity and problem-solving capabilities but also enables us to navigate cultural nuances and market dynamics with ease. Ultimately, our diverse team empowers us to deliver tailor-made solutions that drive success and create impact on a global scale.",
     img: "/Assets/aboutus1.jpg",
   },
   {
@@ -69,8 +69,8 @@ export default function About() {
       <Hero />
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 sm:!px-10 py-20">
         <h1 className="text-white text-4xl lg:text-5xl font-[600]">
-          Our Dream is to <span className="topIntro">IGNITE</span>{" "}
-          transformative change.
+          Our Goal is to <span className="topIntro">IGNITE</span> transformative
+          change.
         </h1>
         <div className="text-white">
           <p className="pb-2">
@@ -98,7 +98,7 @@ export default function About() {
                 <img
                   src={item.img}
                   alt="women1"
-                  className={`rounded-2xl object-cover w-full h-full md:h-[250px] md:w-[400px] lg:w-[600px]`}
+                  className={`rounded-2xl object-cover w-full h-full md:h-[320px] md:w-[400px] lg:w-[600px]`}
                 />
               </div>
               <div className="flex-1">
@@ -141,7 +141,7 @@ export default function About() {
           return (
             <div
               key={index + "mission"}
-              className="text-white h-[340px] border mission-vision flex flex-col items-center w-[300px] py-5 px-2 rounded-2xl"
+              className="text-white h-[600px] border mission-vision flex flex-col items-center w-[300px] py-5 px-2 rounded-2xl"
             >
               <img
                 src={item.img}

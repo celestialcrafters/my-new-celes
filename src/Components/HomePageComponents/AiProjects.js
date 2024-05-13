@@ -79,7 +79,7 @@ const AiProjects = () => {
             ))}
           </div>
 
-          <Link to="/work">
+          <Link to="/services">
             <div className="text-white w-[180px] mt-10 text-sm font-semibold py-3 px-4 bg-blue-700 rounded-md flex items-center gap-1">
               <span>View more</span>
               <svg

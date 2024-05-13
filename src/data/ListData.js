@@ -1,7 +1,7 @@
 export const listData =[
     {
         topic: "Expertise and Experience",
-        explanation:" Our team is composed of seasoned professionals who bring a wealth of knowledge and hands-on experience across various industries."
+        explanation:" Our team of women is composed of seasoned professionals who bring a wealth of knowledge and hands-on experience across various industries."
     },
     {
         topic: "Tailored Solutions",
