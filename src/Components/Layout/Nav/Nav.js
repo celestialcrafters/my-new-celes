@@ -1,6 +1,6 @@
 // Nav.js
 import { useState } from "react";
-import {  NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import DonateModal from "../DonateModal";
 import { motion } from "framer-motion";
 import "./Nav.css";
@@ -12,11 +12,10 @@ const Nav = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const mobileButton =()=>{
-    setShowProfile(true)
+  const mobileButton = () => {
+    setShowProfile(true);
     setIsOpen(false);
-
-  }
+  };
   return (
     <>
       <nav className="flex justify-between items-center pt-7 pb-2 px-4 sm:!px-10">
@@ -60,12 +59,13 @@ const Nav = () => {
             );
           })}
           <li>
-            <button
-              className="text-white text-sm font-semibold py-3 ml-3 px-10 bg-blue-700 rounded-md flex justify-center gap-1"
-              onClick={() => setShowProfile(true)}
+            <Link
+              to="/donate"
+              className="text-white flex justify-center items-center text-sm font-semibold py-3 ml-3 px-10 bg-blue-700 rounded-md gap-1"
             >
-              Donate
-            </button>
+              <img src="/donate/heart.png" alt="heart" className="w-7" />
+              <p>Donate</p>
+            </Link>
           </li>
         </ul>
       </nav>
@@ -81,10 +81,14 @@ const Nav = () => {
         <div className="flex justify-between gap-2 w-[100%] items-center">
           <div>
             <NavLink to="/">
-              <img src="/Assets/icons/logo.png" alt="logo" className="w-[80px]" />
+              <img
+                src="/Assets/icons/logo.png"
+                alt="logo"
+                className="w-[80px]"
+              />
             </NavLink>
           </div>
-          <div onClick={toggleMenu} className="text-white pb-4">
+          <div onClick={toggleMenu} className="text-white pb-4 pr-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="30"
@@ -126,14 +130,14 @@ const Nav = () => {
               );
             })}
 
-            <li className="">
-              <button
-                className="text-white text-sm font-semibold py-3 px-10 bg-blue-700 rounded-md flex justify-center gap-1"
-                onClick={mobileButton}
-              >
-                Donate
-              </button>
-            </li>
+            <Link
+              to="/donate"
+              onClick={toggleMenu}
+              className="text-white text-sm font-semibold py-3 px-10 bg-blue-700 rounded-md flex items-center justify-center gap-1"
+            >
+              <img src="/donate/heart.png" alt="heart" className="w-7" />
+              <p>Donate</p>
+            </Link>
           </ul>
         </nav>
       </motion.div>

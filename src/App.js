@@ -6,6 +6,7 @@ import Service from "./Pages/service";
 import About from "./Pages/About";
 import Layout from "./Components/Layout/Layout";
 import StartProject from "./Pages/StartProject";
+import Donate from "./Pages/Donate";
 export default function App() {
   return (
       <Routes>
@@ -15,6 +16,7 @@ export default function App() {
          <Route path="/work" element={<OurWork />} />
          <Route path="/services" element={<Service />} />
          <Route path="/startProject" element={<StartProject />} />
+         <Route path="/donate" element={<Donate />} />
       </Route>
     </Routes>
   );
