@@ -1,6 +1,5 @@
 import "../Components/Donate/Donate.css";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Donate = () => {
   const [donationType, setDonationType] = useState("one-time");
@@ -22,8 +21,8 @@ const Donate = () => {
   };
   return (
     <div>
-      <section className=" bg  text-white flex flex-col gap-10 !rounded-none backdrop-filter min-h-[100vh] backdrop-blur-2xl !py-10  !w-[90%] mx-auto px-3 sm:px-10 my-14 ">
-        <article className="grid md:grid-cols-2 gap-24">
+      <section className=" bg text-white flex flex-col gap-10 !rounded-none backdrop-filter min-h-[100vh] backdrop-blur-2xl !py-10  !w-[90%] mx-auto px-3 sm:px-10 my-14 ">
+        <article className="grid lg:grid-cols-2 gap-24 justify-between">
           <div className="flex flex-col gap-6">
             <h1 className="font-600 text-5xl">Welcome to Celestial Crafters</h1>
             <div className="bg-[#000033] p-5 ">
@@ -51,10 +50,10 @@ const Donate = () => {
             </div>
           </div>
           <div>
-            <img src="/donate/child.png" alt="child" />
+            <img src="/donate/child.png" alt="child" className="h-full object-cover w-full" />
           </div>
         </article>
-        <article className="bg-[#000033] p-10 ">
+        <article className="bg-[#000033] p-5 sm:p-10 ">
           <div className="flex flex-col gap-4">
             <p className="pb-3">
               As a Social Impact Company, with 99% of our team originating from
@@ -118,7 +117,7 @@ const Donate = () => {
         </div>
         <div className="border-b border-[#544E4E]">
           <div className=" px-4 sm:!px-10 md:!px-20 py-16">
-            <div className="grid grid-cols-6 gap-10 ">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 lg:gap-10 ">
               {[1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 50, 25].map(
                 (amount) => (
                   <div key={amount} className="flex gap-2 ">
@@ -138,13 +137,13 @@ const Donate = () => {
         </div>
         {/* end */}
         <div className="border-b border-[#544E4E]">
-          <div className="px-4 sm:!px-10 md:!px-20 py-10 flex  justify-between">
-            <div>
+          <div className="px-4 sm:!px-10 md:!px-20 py-10 flex flex-col sm:flex-row gap-3 justify-center sm:justify-between items-center">
+            <div> 
               <div className="flex gap-3 items-center  flex-col sm:flex-row pb-10">
                 <label>Amount Of Choice </label>
                 <input
                   type="number"
-                  className="bg-white py-3 border-[2px] text-gray-500 px-2  outline-none"
+                  className="bg-white py-3 w-full border-[2px] text-gray-500 px-2  outline-none"
                 />
               </div>
               <div>
@@ -159,13 +158,13 @@ const Donate = () => {
                 </label>
               </div>
             </div>
-            <div>
-              <img src="/donate/hands.png" alt="hands" />
+            <div className="flex flex-center">
+              <img src="/donate/hands.png" alt="hands"  />
             </div>
           </div>
 
           <div className="px-4 sm:!px-10 md:!px-20 py-4">
-            <div className="flex flex-col sm:flex-row justify-between gap-16 mt-3">
+            <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center md:justify-between gap-6 lg:gap-16 mt-3">
               {[
                 "donate monthly",
                 "donate once",
@@ -173,7 +172,7 @@ const Donate = () => {
                 "more ways to give",
               ].map((item) => {
                 return (
-                  <button className="text-white uppercase text-md flex-1 py-3 px-2 bg-blue-700 rounded-md flex justify-center items-center ">
+                  <button className="text-white uppercase w-[250px] text-md py-3 px-2  bg-blue-700 rounded-md flex justify-center items-center ">
                     {item}
                   </button>
                 );

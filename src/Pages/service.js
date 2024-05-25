@@ -27,7 +27,7 @@ const servicesData = [
     id: 4,
     title: "CYBERSECURITY",
     description:
-      "Our web development ensures seamless design and functionality across devices, prioritizing user experience. In mobile app development, we excel in creating high-performance, scalable solutions for both iOS and Android.",
+      "Our cybersecurity services ensure robust protection and proactive defense against threats, prioritizing the security and integrity of your digital assets. In network security, we excel in implementing comprehensive, scalable solutions tailored to safeguard both small businesses and large enterprises.",
     image: "../images/cybersecurity.png",
   },
   {

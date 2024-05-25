@@ -9,13 +9,13 @@ const mission = [
   {
     topic: "OUR VISION",
     text1:
-      "To be the global beacon of innovation and excellence in Technology, empowering businesses to transcend their potential and shape a sustainable, prosperous future.",
+      "We envision a world where gender disparities is a thing of the past. We foresee a world every woman is appreciated and respected, We envision a world where gender disparities in tech is a thing of the past. We foresee a Kenya where technology is not only 15% occupied by women but an increase with at least 10% in the next 3 years. We envision a Kenya where women are not only economically empowered but also have a voice that will impact upcoming generations of women that are able to speak up for themselves without fear of expression or judgement.",
     img: "../Assets/BigImages/vision.png",
   },
   {
     topic: "OUR MISSION",
     text1:
-      "  Celestial Crafters' mission is to drive innovation in the technology industry while fostering diversity, inclusivity, and empowerment. We are committed to promoting equality and reducing inequalities by providing equal opportunities for women, individuals from the LGBTQIA+ community, and persons with disabilities. Through our core values of innovation, integrity, teamwork, and sustainability, we strive to inspire the next generation of leaders while breaking down barriers and creating a more equitable and inclusive world.",
+      "Celestial Crafters' mission is to drive innovation in the technology industry while fostering diversity, inclusivity, and empowerment. We are committed to promoting equality and reducing inequalities by providing equal opportunities for women, individuals from the LGBTQIA+ community, and persons with disabilities. Through our core values of innovation, integrity, teamwork, and sustainability, we strive to inspire the next generation of leaders while breaking down barriers and creating a more equitable and inclusive world.",
     img: "../Assets/BigImages/mission.png",
   },
 ];
