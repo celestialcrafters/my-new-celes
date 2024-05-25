@@ -172,7 +172,7 @@ const Donate = () => {
                 "more ways to give",
               ].map((item) => {
                 return (
-                  <button className="text-white uppercase w-[250px] text-md py-3 px-2  bg-blue-700 rounded-md flex justify-center items-center ">
+                  <button className="text-white uppercase w-[250px] lg:w-[200px] text-md py-3 px-2  bg-blue-700 rounded-md flex justify-center items-center ">
                     {item}
                   </button>
                 );
