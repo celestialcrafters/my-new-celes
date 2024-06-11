@@ -45,6 +45,7 @@ const Nav = () => {
             { link: "/about", name: "About" },
             { link: "services", name: "Services" },
             { link: "work", name: "Our Work" },
+            { link: "internship", name: "Internship" },
             { link: "startProject", name: "Start Project" },
           ].map((item, index) => {
             return (
@@ -116,6 +117,7 @@ const Nav = () => {
               { link: "/about", name: "About" },
               { link: "services", name: "Services" },
               { link: "work", name: "Our Work" },
+              { link: "internship", name: "Internship" },
               { link: "startProject", name: "Start Project" },
             ].map((item, index) => {
               return (
