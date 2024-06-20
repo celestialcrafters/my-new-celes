@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 import { FaPhone } from "react-icons/fa";
 import { RiRedPacketLine } from "react-icons/ri";
 
 const Internship = () => {
+
   const servicesData1 = [
     {
       id: 1,
@@ -68,27 +70,27 @@ const Internship = () => {
   const guests = [
     {
       id: 1,
-      img: "/ourWork/work2.jpg",
-      name: "name",
-      job: "what they do",
+      img: "/ourWork/Florent.jpeg",
+      name: "Florent Nduwayezu",
+      job: " Investments | Private Equity & Venture Capital | Africa",
     },
     {
       id: 2,
-      img: "/ourWork/work2.jpg",
-      name: "name",
-      job: "what they do",
+      img: "/ourWork/Matt.jpg",
+      name: "Matt Magera",
+      job: "Co-Creator",
     },
     {
       id: 3,
-      img: "/ourWork/work2.jpg",
-      name: "name",
-      job: "what they do",
+      img: "/Assets/BigImages/Aenia.jpeg",
+      name: "Aenia Amin",
+      job: "Data Analytics Expert | Software Engineer | Lead Internship Manager at Celestial Crafters.",
     },
     {
       id: 4,
-      img: "/ourWork/work2.jpg",
-      name: "name",
-      job: "what they do",
+      img: "/Assets/BigImages/avatar1.png",
+      name: "Serah Kamau",
+      job: "Founder and CEO Celestial Crafters | Software Engineer | Automotive Engineer",
     },
   ];
   const ContactInfo = [
@@ -203,9 +205,11 @@ const Internship = () => {
             </div>
           </div>
           <div className="flex justify-center py-10">
+            <Link to="/internshipForm">
             <button className="text-white text-sm uppercase font-semibold py-4 px-10 bg-blue-700 rounded-lg flex items-center justify-center ">
               <p>APPLY NOW</p>
             </button>
+            </Link>
           </div>
           <div className="mt-20">
             <h3 className="text-lg">

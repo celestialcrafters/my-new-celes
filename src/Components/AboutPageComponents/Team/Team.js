@@ -6,11 +6,13 @@ import "swiper/css/scrollbar";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 // import required modules
-import { Keyboard, Scrollbar, Navigation } from "swiper/modules";
+import  { Keyboard, Scrollbar, Navigation } from "swiper/modules";
+
 import "../../HomePageComponents/Testimonial/Testimonial.css";
 import { TeamData } from "./TeamData";
 
 const Team = () => {
+
   return (
     <div className="px-10 lg:px-20 py-20">
       <div className="relative z-20 flex flex-col xl:flex-row gap-8 justify-center items-center">

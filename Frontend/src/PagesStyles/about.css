@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.all {
+  min-width: 100%;
+}
+.topDesign {
+  display: flex;
+  padding: 15px;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 20px;
+}
+.topDesign h2{
+  padding-left: 20px;
+}
+.aboutUs{
+  padding-left: 15px;
+}
+hr {
+  width: 300px;
+  height: 1.5px;
+  background-color: #000000;
+}
+.firstDiv {
+  display: flex;
+  padding: 15px;
+  margin-left: 15px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.secondDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-top: 20px;
+  padding: 15px;
+}
+.firstDiv img,
+.secondDiv img {
+  width: 600px;
+}
+.thirdImage {
+  width: 500px;
+}
+.firstDiv .aboutUs {
+  width: 550px;
+}
+.aboutUs{
+    border-left: 1.5px solid #000000;
+}
+.aboutUs p {
+  padding-bottom: 10px;
+  line-height: 1.7rem;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.aboutUs strong {
+  font-size: 20px;
+}
+.aboutUs div {
+  padding-bottom: 10px;
+}
+.VisonsMission {
+  width: 600px;
+  padding-top: 30px;
+  padding: 15px;
+}
+.VisonsMission h2 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.VisonsMission p {
+  line-height: 1.7rem;
+  font-size: 20px;
+}
+.how {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5efc136;
+  padding-top: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+.how-Long {
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 20px;
+  padding-bottom: 7rem;
+  padding: 35px;
+}
+.how-Long h4 {
+  color: #bb4019;
+  padding: 20px 10px 40px 10px;
+}
+.how-Long h1 {
+  font-size: 4.5rem;
+  padding-bottom: 20px;
+  width: 500px;
+}
+.how-Long p {
+  font-weight: 700;
+}
+.all-about-data {
+  background-color: #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.experience {
+  background-color: #f6f6e0;
+  text-align: center;
+  height: 100px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.experience p {
+  font-size: 12px;
+}
+.team {
+  margin-top: 20px;
+  background-color: #daebd247;
+  padding: 20px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.team-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 20px;
+}
+.team-profile div {
+  line-height: 1.2rem;
+  padding-top: 10px;
+}
+.team-profile img {
+  width: 120px;
+}
+.allteamheads {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 20px;
+}
+.choose {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20PX;
+}
+.choose h3 {
+  font-size: 30px;
+  padding-bottom: 10px;
+  color: #000000;
+}
+.choose p {
+  padding: 10px;
+  line-height: 1.5rem;
+  font-size: 18px;
+  text-align: left;
+}
+.list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.list strong {
+  font-size: 16px;
+  text-wrap: nowrap;
+}
+.list p {
+  font-size: 16px;
+}
+.list div{
+    display: flex;
+    align-items: center;
+}
+.list img {
+  margin-right: 10px;
+}
+.portfolio{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px;
+  margin: 40px 10px;
+  background: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-blend-mode:overlay;
+}
+.portfolio div{
+  color: #fff;
+  line-height: 1.8rem;
+}
+.portfolio button{
+  padding: 15px 40px;
+  color: #fff;
+  background-color: hsla(256, 83%, 51%, 1);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  
+}
+@media (max-width: 768px) {
+  .firstDiv,
+  .secondDiv,
+  .how {
+    flex-direction: column;
+  }
+  hr {
+    display: none;
+  }
+  .firstDiv {
+    align-items: start;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  .aboutUs{
+    padding: 10px;
+  }
+ .firstDiv img{
+    width: 550px;
+    margin-top: 20px;
+ }
+ .secondDiv img{
+    order: 1;
+    width: 550px;
+    margin-top: 20px;
+ }
+ .how{
+    align-items: start;
+    justify-content: start;
+ }
+ .thirdImage{
+    width: 550px;
+    margin-left: 20px;
+ }
+ .team{
+    background-color: #fff;
+    
+ }
+ .allteamheads{
+  display: grid;
+  grid-template-columns: auto auto auto;
+ }
+ .team-profile{
+    margin-right: 35px;
+ }
+ .team-profile img{
+    width: 100px;
+ }
+ .choose p{
+    width: 100%;
+ }
+ .list{
+    text-align: justify;
+    width: 100%;
+    align-items: start;
+ }
+ .list div{
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+ }
+}
