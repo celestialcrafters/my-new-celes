@@ -9,7 +9,7 @@ const mission = [
   {
     topic: "OUR VISION",
     text1:
-      "We envision a world where gender disparities is a thing of the past. We foresee a world every woman is appreciated and respected, We envision a world where gender disparities in tech is a thing of the past. We foresee a Kenya where technology is not only 15% occupied by women but an increase with at least 10% in the next 3 years. We envision a Kenya where women are not only economically empowered but also have a voice that will impact upcoming generations of women that are able to speak up for themselves without fear of expression or judgement.",
+      "We envision a world where gender disparities in tech is a thing of the past. We foresee a Kenya where technology is not only 15% occupied by women but an increase with at least 10% in the next 3 years. We envision a Kenya where women are not only economically empowered but also have a voice that will impact upcoming generations of women that are able to speak up for themselves without fear of expression or judgement.",
     img: "../Assets/BigImages/vision.png",
   },
   {
