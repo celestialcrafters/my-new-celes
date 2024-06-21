@@ -28,14 +28,10 @@ function validateFormData(data) {
         errors.push('Please select your gender from the provided options.');
     }
 
-
     // Country
     if (!data.country || data.country.trim().length === 0) {
         errors.push('Country is required.');
-    } else if (!/^\+\d+$/.test(data.phoneNumber)) {
-        errors.push('Phone number should include the country code and only contain digits.');
     }
-
 
     // Highest Academic Qualification
     if (!data.highestQualification || !['high school', 'college/university'].includes(data.highestQualification.toLowerCase())) {
@@ -51,10 +47,10 @@ function validateFormData(data) {
         }
     }
 
-     // Preferred Internship Specialization
+    // Preferred Internship Specialization
     const validSpecializations = [
         'frontend web development', 'ui/ux design', 'database management', 'product management', 'cybersecurity',
-        , 'backend web development', 'fullstack web development', 'graphic designer', 'technical writer', 'mobile development',
+        'backend web development', 'fullstack web development', 'graphic designer', 'technical writer', 'mobile development',
         'human resource', 'finance', 'social media manager', 'Data Analytics'
     ];
     if (!data.preferredInternship || !validSpecializations.includes(data.preferredInternship.toLowerCase().trim())) {
@@ -71,6 +67,16 @@ function validateFormData(data) {
         errors.push('How did you learn about us is required and must be one of "social media", "online job portals", "referrals", or "other".');
     } else if (data.howDidYouLearnAboutUs.toLowerCase() === 'other' && (!data.otherSource || data.otherSource.trim().length === 0)) {
         errors.push('If you selected "other", please specify the source.');
+    }
+
+    // Transaction Code
+    if (!data.transactionCode || data.transactionCode.trim() === '') {
+        errors.push('Transaction code is required.');
+    }
+
+    // Payment Name
+    if (!data.paymentName || data.paymentName.trim() === '') {
+        errors.push('Payment name is required.');
     }
 
     return errors;

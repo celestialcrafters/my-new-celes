@@ -39,7 +39,7 @@ app.use("/api/user", require("./routes/userRoutes"));
 app.use("/api/testimonials", require("./routes/testimonialRoutes"));
 
 //form routes
-app.use("/api/form", require("./routes/formRoutes"));
+app.use("/api", require("./routes/formRoutes"));
 
 //reset password routes
 app.use("/api", require("./routes/passwordResetRoute"));
