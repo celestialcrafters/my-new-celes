@@ -445,7 +445,7 @@ const Form = () => {
           </button>
           <div className={!serverState?.ok ? "errorMsg" : ""}>
 
-<p className="text-green-400">{serverState?.msg}</p>    
+<p className="text-green-500">{serverState?.msg}</p>    
   </div>
         </form>
 
