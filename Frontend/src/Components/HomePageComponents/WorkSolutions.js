@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-
 const WorkSolution = () => {
   const servicesData = [
     {
@@ -28,7 +27,7 @@ const WorkSolution = () => {
       id: 4,
       title: "CYBERSECURITY",
       description:
-        "Our web development ensures seamless design and functionality across devices, prioritizing user experience.",
+        "With a comprehensive understanding of the latest cyber threats and cutting-edge security technologies, our team is equipped to fortify your digital infrastructure against unauthorized access, data breaches, and other cybersecurity risks.",
       image: "../images/cybersecurity.png",
     },
   ];
@@ -59,13 +58,15 @@ const WorkSolution = () => {
             {servicesData.map((service, index) => (
               <div key={index} className="">
                 <div className="flex items-center md:items-start  mb-10 gap-3">
-                  <h5 className=" text-blue-500 text-2xl font-bold">0{service.id}</h5>
+                  <h5 className=" text-blue-500 text-2xl font-bold">
+                    0{service.id}
+                  </h5>
                   <div className="flex flex-col md:flex-row md:!justify-between w-full">
                     <h5 className=" text-white text-xl  font-semibold">
                       {service.title}
                     </h5>
                     <p className="text-white text-sm md:text-md  font-normal max-w-[500px]">
-                     {service.description}
+                      {service.description}
                     </p>
                   </div>
                 </div>

@@ -1,13 +1,18 @@
 import Location from "../../Assets/icons/Location.png";
 import copyright from "../../Assets/icons/copyright.png";
-import { FaLinkedin, FaTiktok, FaPhone } from "react-icons/fa";
+import { FaLinkedin, FaTiktok, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { RiRedPacketLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 export const ContactInfo = [
   {
-    icon: <FaPhone />,
+    icon: <FaWhatsapp/>,
     info: "+254-7-27-493-854",
     page: "tel:+254-7-27-493-854",
+  },
+  {
+    icon: <FaPhone/>,
+    info: "+254-1-14-395-617",
+    page: "tel:+254-1-14-395-617",
   },
   {
     icon: <RiRedPacketLine />,

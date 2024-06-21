@@ -164,7 +164,7 @@ const Donate = () => {
           </div>
 
           <div className="px-4 sm:!px-10 md:!px-20 py-4">
-            <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center md:justify-between gap-6 lg:gap-16 mt-3">
+            {/* <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center md:justify-between gap-6 lg:gap-16 mt-3">
               {[
                 "donate monthly",
                 "donate once",
@@ -177,7 +177,7 @@ const Donate = () => {
                   </button>
                 );
               })}
-            </div>
+            </div> */}
             <div className="flex justify-center py-10">
               <button className="text-white text-sm uppercase font-semibold py-4 px-10 bg-blue-700 rounded-sm flex items-center justify-center gap-1">
                 <img src="/donate/heart.png" alt="heart" className="w-7" />

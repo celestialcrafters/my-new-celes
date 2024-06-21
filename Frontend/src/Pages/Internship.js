@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaPhone } from "react-icons/fa";
+import { FaPhone, FaWhatsapp } from "react-icons/fa";
 import { RiRedPacketLine } from "react-icons/ri";
 
 const Internship = () => {
@@ -78,7 +78,7 @@ const Internship = () => {
       id: 2,
       img: "/ourWork/Matt.jpg",
       name: "Matt Magera",
-      job: "Co-Creator",
+      job: "Co-Creator Talent",
     },
     {
       id: 3,
@@ -96,7 +96,12 @@ const Internship = () => {
   const ContactInfo = [
     {
       icon: <FaPhone />,
-      info: "+254114395617 OR  +254727493854 (WhatsApp) ",
+      info: "+254114395617",
+      page: "tel:+254-1-14-395-617",
+    },
+    {
+      icon: <FaWhatsapp />,
+      info: "+254727493854  ",
       page: "tel:+254-7-27-493-854",
     },
     {
@@ -143,7 +148,7 @@ const Internship = () => {
                 {servicesData1.map((service) => {
                   return (
                     <div key={service.id + "services"} className="pb-3">
-                      <span className="text-blue-800 px-4 text-3xl font-bold">
+                      <span className="text-blue-800 px-4 text-3xl mb-3 font-bold">
                         {service.id}
                       </span>
                       {service.title}
@@ -196,7 +201,7 @@ const Internship = () => {
                         alt="img"
                         className="w-[280px] h-[250px] object-cover rounded-[15px] rounded-b-none pb-3"
                       />
-                      <h1 className="text-blue-800 font-[600]">{guest.name}</h1>
+                      <h1 className="text-blue-800 mb-2 font-[600]">{guest.name}</h1>
                       <p> {guest.job}</p>
                     </div>
                   );

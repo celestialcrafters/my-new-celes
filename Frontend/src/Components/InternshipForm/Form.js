@@ -1,8 +1,25 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Form.css";
+import {  FaWhatsapp } from "react-icons/fa";
+import { RiRedPacketLine } from "react-icons/ri";
+
 
 const Form = () => {
+
+const ContactInfo = [
+  {
+    icon: <RiRedPacketLine />,
+    info: "internships@celestialcrafters.co.ke",
+    page: "mailto:internships@celestialcrafters.co.ke",
+  },
+  {
+    icon: <FaWhatsapp />,
+    info: "+254727493854  ",
+    page: "tel:+254-7-27-493-854",
+  },
+];
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -388,20 +405,26 @@ const Form = () => {
             </ol>
             <br />
             <p>
-              If you have paid send your name and screenshot of payment this
-              WhatsApp number: <strong>+254727493854 </strong>or to{" "}
-              <a
-                href="mailto:internships@celestialcrafters.co.ke"
-                className="text-blue-300"
-                style={{
-                  fontWeight: "bold",
-                  wordBreak: "break-all",
-                  display: "inline-block",
-                }}
-              >
-                internships@celestialcrafters.co.ke
-              </a>{" "}
-              for further rules and guidelines.
+              If you have paid send your name and screenshot of payment to:
+              <div className="flex flex-col gap-1">
+                {ContactInfo.map((item, index) => {
+                  return (
+                    <a
+                      href={item.page}
+                      className="flex gap-2overflow-x-auto no-scrollbar"
+                      target="_blank"
+                      rel="noreferrer"
+                      key={index + item.info}
+                    >
+                      <div className="text-blue-700 text-2xl">{item.icon}</div>
+                      <span className="text-white group-hover:text-accent duration-500">
+                        {item.info}
+                      </span>
+                    </a>
+                  );
+                })}
+              </div>
+            
             </p>
           </div>
           <div className="row form-group ">
