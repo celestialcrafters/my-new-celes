@@ -406,12 +406,12 @@ const ContactInfo = [
             <br />
             <p>
               If you have paid send your name and screenshot of payment to:
-              <div className="flex flex-col gap-1">
+              <div className="flex lex-col gap-1">
                 {ContactInfo.map((item, index) => {
                   return (
                     <a
                       href={item.page}
-                      className="flex gap-2overflow-x-auto no-scrollbar"
+                      className="flex gap-2 overflow-x-auto no-scrollbar"
                       target="_blank"
                       rel="noreferrer"
                       key={index + item.info}
