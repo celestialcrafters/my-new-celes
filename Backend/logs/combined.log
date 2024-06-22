@@ -7,3 +7,16 @@
 {"code":"ER_WRONG_VALUE_COUNT_ON_ROW","errno":1136,"level":"error","message":"Error inserting data: Column count doesn't match value count at row 1","sql":"INSERT INTO intern_applications (\n                uuid,\n                full_name,\n                email,\n                gender,\n                phone_number,\n                country,\n                highest_qualification,\n                preferred_internship,\n                skill_level,\n                how_you_learnt_about_us,\n                other_source,\n                inquiry\n            ) VALUES ('6e4f6d6d-2c92-410a-93df-ea2461794578', 'John Doe', 'johndoes@gmail.com', 'non-binary', '+256136875090', 'Uganda', 'college/university', 'product management', 'mid', 'other', 'blog post')","sqlMessage":"Column count doesn't match value count at row 1","sqlState":"21S01","stack":"Error: Column count doesn't match value count at row 1\n    at PromisePoolConnection.query (/home/cassadra18/celestial-crafters-portfolio/Backend/node_modules/mysql2/promise.js:94:22)\n    at /home/cassadra18/celestial-crafters-portfolio/Backend/controllers/internshipForm.js:58:48\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}
 {"level":"info","message":"Form submitted successfully. UUID: c57ec2cf-86b8-409d-8457-b2993e8efaac"}
 {"level":"info","message":"Form submitted successfully. UUID: 4455a94e-39f9-44d8-841e-1b65df352818"}
+{"level":"info","message":"Form submitted successfully. UUID: 800cfd38-62b9-4a8a-a7b0-0693c13bebea"}
+{"level":"info","message":"Form submitted successfully. UUID: 9f741518-0028-4057-884b-d6bfa4577649"}
+{"level":"info","message":"Form submitted successfully. UUID: 0b6785be-9d05-4c18-a544-1a98036e6170"}
+{"level":"info","message":"Form submitted successfully. UUID: c7535b3f-d265-4941-9348-d923b09eaa00"}
+{"level":"info","message":"Form submitted successfully. UUID: 42b1e87d-e2eb-4d26-9407-419141c2cffd"}
+{"level":"info","message":"Form submitted successfully. UUID: 4d5e49c8-ad8e-4d46-bd18-f501dda9f2e6"}
+{"level":"info","message":"Form submitted successfully. UUID: dcbc9a39-dd9b-4477-a36c-0d270bc1bbf4"}
+{"level":"info","message":"Form submitted successfully. UUID: 671ca09e-7a10-42d2-9d57-c2ecc981c7d3"}
+{"level":"info","message":"Form submitted successfully. UUID: c1af96f6-7ced-444e-9021-11637a33d5ad"}
+{"level":"info","message":"Form submitted successfully. UUID: 6d58a916-8e36-4a10-bdb3-b775c3b9b1ff"}
+{"level":"info","message":"Form submitted successfully. UUID: 2cc258f8-d3e6-4d05-a0f3-d990ff97a59b"}
+{"level":"info","message":"Form submitted successfully. UUID: 4c2cb6d9-42ad-40fa-99ed-1b66cdf919a0"}
+{"level":"info","message":"Form submitted successfully. UUID: 9700ffb9-c0d5-4a1d-9407-dff2a968f7a1"}

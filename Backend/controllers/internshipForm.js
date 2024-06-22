@@ -34,7 +34,9 @@ const submitForm = asyncHandler(async (req, res) => {
         howDidYouLearnAboutUs,
         otherSource,
         inquiry,
-        howGainedSkills
+        howGainedSkills,
+        transactionCode,
+        paymentName
     } = req.body;
 
     const uuid = uuidv4();
@@ -68,8 +70,10 @@ const submitForm = asyncHandler(async (req, res) => {
                 skill_level,
                 how_you_learnt_about_us,
                 other_source,
-                inquiry
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+                inquiry,
+                transaction_code,
+                payment_name
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
             [
                 uuid,
                 fullName,
@@ -82,7 +86,9 @@ const submitForm = asyncHandler(async (req, res) => {
                 skillLevel,
                 howDidYouLearnAboutUs,
                 howDidYouLearnAboutUs.toLowerCase() === 'other' ? otherSource : null,
-                inquiry
+                inquiry,
+                transactionCode,
+                paymentName
             ]
         );
 
@@ -102,7 +108,7 @@ const submitForm = asyncHandler(async (req, res) => {
 
         await conn.commit();
         conn.release();
-
+        console.log(applicationId);
         logger.info(`Form submitted successfully. UUID: ${uuid}`);
         res.status(200).json({ message: 'Form submitted successfully.' });
 
