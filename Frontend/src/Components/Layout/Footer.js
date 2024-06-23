@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 export const ContactInfo = [
   {
     icon: <FaWhatsapp/>,
-    info: "+254-7-27-493-854",
-    page: "tel:+254-7-27-493-854",
+    info: "+254-727493854",
+    page: "https://wa.me/254727493854",
   },
   {
     icon: <FaPhone/>,
-    info: "+254-1-14-395-617",
-    page: "tel:+254-1-14-395-617",
+    info: "+254-114395617",
+    page: "tel:+254-114395617",
   },
   {
     icon: <RiRedPacketLine />,
