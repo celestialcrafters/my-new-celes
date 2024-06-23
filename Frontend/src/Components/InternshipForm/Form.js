@@ -15,8 +15,8 @@ const ContactInfo = [
   },
   {
     icon: <FaWhatsapp />,
-    info: "+254727493854  ",
-    page: "tel:+254-7-27-493-854",
+    info: "+254-727493854  ",
+    page: "https://wa.me/254727493854",
   },
 ];
 
@@ -295,7 +295,6 @@ const ContactInfo = [
               Frontend Web Development
             </option>
             <option value="ui/ux design">UI/UX Design</option>
-            <option value="database management">Database Management</option>
             <option value="product management">Product Management</option>
             <option value="cybersecurity">Cybersecurity</option>
             <option value="backend web development">
@@ -305,7 +304,6 @@ const ContactInfo = [
               Fullstack Web Development
             </option>
             <option value="graphic designer">Graphic Designer</option>
-            <option value="technical writer">Technical Writer</option>
             <option value="mobile development">Mobile Development</option>
             <option value="human resource">Human Resource</option>
             <option value="finance">Finance</option>

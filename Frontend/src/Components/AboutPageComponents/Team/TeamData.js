@@ -74,7 +74,7 @@ export const TeamData = [
   {
     id: 10,
     name: "Claudia",
-    role: "",
+    role: "Lead Finance Department",
     country: "",
     bio: "Our product manager oversees the developmentand enhancement of our company's offering",
     img: "/Assets/BigImages/claudia.jpg",
@@ -86,5 +86,13 @@ export const TeamData = [
     country: "Nigeria",
     bio: "Seasoned cyber security expert dedicated to protecting digital assets and ensuring data privacy. Passionate about leveraging advanced technologies to safeguard organizations against evolving cyber threats.",
     img: "/Assets/BigImages/Salahudeen.jpeg",
+  },
+  {
+    id: 12,
+    name: "Jeannette Musabyimana",
+    role: "DataBase Administrator",
+    country: "Rwanda",
+    bio: "Jeannette Musabyimana, a DataBase Administrator from Rwanda, excels in managing and optimizing database systems.",
+    img: "/Assets/BigImages/janette.jpeg",
   },
 ];
