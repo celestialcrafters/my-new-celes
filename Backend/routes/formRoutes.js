@@ -4,9 +4,6 @@ const formControllers = require("../controllers/formControllers");
 
 
 
-//create routes
-router.route('/contact-us').post(formControllers.createForm);
-
 //get form
 router.route("/get-forms").get( formControllers.getAllForms);
 
