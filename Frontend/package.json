@@ -1,5 +1,6 @@
 {
   "name": "my-pro",
+  "homepage": "https://celestialcrafters.co.ke/celestialcraftersweb",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

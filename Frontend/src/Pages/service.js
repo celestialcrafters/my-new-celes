@@ -7,42 +7,42 @@ const servicesData = [
     title: "SOFTWARE DEVELOPMENT",
     description:
       "software development is at the heart of what we do. We specialize in creating innovative solutions tailored to meet the unique needs of our clients. from static, dynamic to corporate website we got everything under control.",
-    image: "../images/softwaredev.png",
+    image: `${process.env.PUBLIC_URL}/images/softwaredev.png`
   },
   {
     id: 2,
     title: "DATA ANALYTICS",
     description:
       "Unlocking Data Insights: Our expertise spans descriptive, diagnostic, and predictive analytics, transforming raw data into actionable insights. With cutting-edge tools and methodologies, our team empowers you to make informed decisions and seize new opportunities.",
-    image: "./images/dataanalytics.png",
+    image: `${process.env.PUBLIC_URL}/images/dataanalytics.png`
   },
   {
     id: 3,
     title: "APP DEVELOPMENT",
     description:
       "Our web development ensures seamless design and functionality across devices, prioritizing user experience. In mobile app development, we excel in creating high-performance, scalable solutions for both iOS and Android.",
-    image: "../images/projectmanagemnet.png",
+    image: `${process.env.PUBLIC_URL}/images/projectmanagemnet.png`
   },
   {
     id: 4,
     title: "CYBERSECURITY",
     description:
       "Our cybersecurity services ensure robust protection and proactive defense against threats, prioritizing the security and integrity of your digital assets. In network security, we excel in implementing comprehensive, scalable solutions tailored to safeguard both small businesses and large enterprises.",
-    image: "../images/cybersecurity.png",
+    image: `${process.env.PUBLIC_URL}/images/cybersecurity.png`
   },
   {
     id: 5,
     title: "UIUX DESIGN",
     description:
       "Our service revolves around crafting seamless and meaningful user experience. We deeply understand your users' behaviors, needs, and motivations through research, personas, and journey mapping. Our dedicated UI/UX designers blend creativity with usability principles to create visually stunning interfaces that elevate user satisfaction and engagement.",
-    image: "../images/uiux.png",
+      image: `${process.env.PUBLIC_URL}/images/uiux.png`,
   },
   {
     id: 6,
     title: "DIGITAL MARKETING",
     description:
       "Elevate your online presence with our comprehensive digital marketing solutions. From search engine optimization (SEO) to targeted social media advertising, we employ cutting-edge strategies to boost your visibility and drive conversions. Let us help you navigate the digital landscape and reach your target audience with precision and impact.",
-    image: "../images/digitalmarketing.png",
+      image: `${process.env.PUBLIC_URL}/images/digitalmarketing.png`,
   },
  
   {
@@ -50,21 +50,21 @@ const servicesData = [
     title: "BRANDING",
     description:
       "Define your identity and leave a lasting impression with our branding services. We work closely with you to develop a cohesive brand strategy that encapsulates your values, vision, and voice. From logo design to brand messaging, we'll help you tell your story authentically and consistently across all channels, building trust and loyalty among your audience.",
-    image: "../images/branding.png",
-  },
+    image: `${process.env.PUBLIC_URL}/images/branding.png`,
+    },
   {
     id: 8,
     title: "SOCIAL MEDIA MANAGEMENT",
     description:
       "Harness the power of social media to connect, engage, and grow your audience. Our expert social media management team crafts tailored content, implements strategic campaigns, and monitors analytics to ensure your brand stands out in the crowded digital sphere. Whether it's community building or influencer partnerships, we'll help you cultivate meaningful connections that drive results.",
-    image: "../images/socialmedia.png",
-  },
+      image: `${process.env.PUBLIC_URL}/images/socialmedia.png`,
+    },
   {
     id: 9,
     title:"GRAPHICS AND DESIGN",
     description:
       "Make a statement with captivating visuals that resonate with your audience. Our talented team of designers combines creativity with technical expertise to deliver stunning graphics that command attention and convey your brand's message effectively. Whether it's website graphics, promotional materials, or packaging design, we'll bring your vision to life with style and flair.",
-    image: "../images/graphic10.png",
+      image: `${process.env.PUBLIC_URL}/images/graphic10.png`,
   },
 ];
 
@@ -83,7 +83,7 @@ const service = () => {
             <div className="acc flex flex-col px-3 items-center">
               <div>
                 <img
-                  src="/serviceIcon/accuracy.png"
+                   src={`${process.env.PUBLIC_URL}/serviceIcon/accuracy.png`}
                   alt="accuracy"
                   className="pho"
                 />
@@ -98,7 +98,7 @@ const service = () => {
             <div className="tim flex flex-col items-center ">
               <div>
                 <img
-                  src="/serviceIcon/timely.png"
+                  src={`${process.env.PUBLIC_URL}/serviceIcon/timely.png`}
                   alt="timeliness"
                   className="pho"
                 />
@@ -113,7 +113,7 @@ const service = () => {
             <div className="exc flex flex-col items-center">
               <div>
                 <img
-                  src="/serviceIcon/rename.png"
+                  src={`${process.env.PUBLIC_URL}/serviceIcon/rename.png`} 
                   alt="excellence"
                   className="pho"
                 />
@@ -126,7 +126,7 @@ const service = () => {
             </div>
           </div>
           <img
-            src="/serviceIcon/Line 3.png"
+           src={`${process.env.PUBLIC_URL}/serviceIcon/Line%203.png`}
             alt="line"
             className="h-[4px] w-full  md:w-[50%] mx-auto"
           />
