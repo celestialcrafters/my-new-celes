@@ -58,7 +58,7 @@ const ContactInfo = [
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/submit-Form",
+        "https://celestialcrafters.co.ke/api/submit-form",
         formData
       );
        if (response.status === 200) {

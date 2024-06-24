@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const formControllers = require("../controllers/formControllers");
 
-
+router.route("/contact-us").post(formControllers.createForm);
 
 //get form
 router.route("/get-forms").get( formControllers.getAllForms);

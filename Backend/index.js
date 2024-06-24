@@ -6,8 +6,6 @@ const morgan = require("morgan");
 const rateLimit = require('express-rate-limit');
 require("colors");
 const errorHandler = require("./middlewares/errorHandler");
-const formController = require("./controllers/formControllers");
-
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -46,13 +44,10 @@ app.use("/api", require("./routes/formRoutes"));
 //reset password routes
 app.use("/api", require("./routes/passwordResetRoute"));
 
-app.use("/submit-form", require("./controllers/internshipForm"));
+app.use("/api/submit-form", require("./controllers/internshipForm"));
 
 app.use("/api", require("./routes/recurringPaymentRoute"));
 
-
-//create routes
-app.use('/contact-us', formController.createForm);
 
 // Backend start link
 app.get('/', (req, res) => {
