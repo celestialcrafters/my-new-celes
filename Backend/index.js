@@ -48,6 +48,12 @@ app.use("/submit-form", require("./controllers/internshipForm"));
 
 app.use("/api", require("./routes/recurringPaymentRoute"));
 
+// Backend start link
+app.get('/', (req, res) => {
+
+  res.send('Welcome to Celestial crafers website Backend side');
+
+});
 
 //Error handling middleware
 app.use(errorHandler);
