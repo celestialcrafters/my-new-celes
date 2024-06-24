@@ -6,7 +6,7 @@ const morgan = require("morgan");
 const rateLimit = require('express-rate-limit');
 require("colors");
 const errorHandler = require("./middlewares/errorHandler");
-const createForm = require("./controllers/formControllers");
+const formController = require("./controllers/formControllers");
 
 
 const app = express();
@@ -52,7 +52,7 @@ app.use("/api", require("./routes/recurringPaymentRoute"));
 
 
 //create routes
-router.route('/contact-us', createForm);
+app.use('/contact-us', formController.createForm);
 
 // Backend start link
 app.get('/', (req, res) => {
