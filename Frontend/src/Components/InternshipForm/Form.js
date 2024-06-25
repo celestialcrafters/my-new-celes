@@ -85,7 +85,7 @@ const ContactInfo = [
         terms: false,
       });
 
-      setServerState({ ok: true, msg: "Thanks for your message! We'll be in touch soon." });
+      setServerState({ ok: true, msg: "Thanks for your submission! We'll be in touch soon." });
     }
     } catch (error) {
       if (error.response && error.response.data && error.response.data.errors) {
@@ -221,6 +221,7 @@ const ContactInfo = [
             type="text"
             name="country"
             value={formData.country}
+            placeholder="+2341234567820"
             onChange={handleChange}
             autocomplete="country" 
           />
