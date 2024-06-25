@@ -24,6 +24,8 @@ const formController = {
       return res.status(400).json({ error: "Invalid message format" });
     }
 
+    console.log("Form submission received:".cyan, req.body);
+
     try {
       const query = `INSERT INTO form_submissions (name, email, message, uuid) VALUES(?, ?, ?, ?)`;
       const values = [name, email, message, uuid];

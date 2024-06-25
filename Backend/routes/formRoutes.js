@@ -1,24 +1,19 @@
 const express = require("express");
 const router = express.Router();
 const formControllers = require("../controllers/formControllers");
-const isAdmin = require("../middlewares/authenticateAdmin");
-const authenticateToken = require("../middlewares/authenticateToken");
 
+router.route("/contact-us").post(formControllers.createForm);
 
-
-//create routes
-router.route('/contact-us').post(formControllers.createForm);
-router.use(authenticateToken);
 //get form
-router.route("/get-forms").get(isAdmin, formControllers.getAllForms);
+router.route("/get-forms").get( formControllers.getAllForms);
 
 //get form by id
-router.route("/get-form/:uuid").get(isAdmin, formControllers.getFormById);
+router.route("/get-form/:uuid").get( formControllers.getFormById);
 
 //upadte form
-router.route("/update-form/:uuid").put(isAdmin, formControllers.updateForm);
+router.route("/update-form/:uuid").put(formControllers.updateForm);
 
 //delete form
-router.route("/delete-form/:uuid").delete(isAdmin, formControllers.deleteForm);
+router.route("/delete-form/:uuid").delete(formControllers.deleteForm);
 
 module.exports = router;

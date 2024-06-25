@@ -23,8 +23,8 @@ const Request = () => {
             </div>
             <div>
               <img
-                src="/images/accuracy.png"
-                className="!flex lg:!hidden mx-auto"
+                 src={`${process.env.PUBLIC_URL}/images/accuracy.png`}
+                 className="!flex lg:!hidden mx-auto"
                 alt="landing page"
               />
             </div>
@@ -49,12 +49,12 @@ const Request = () => {
             </div>
           </div>
           <div className=" col-span-3 !hidden lg:!flex">
-            <img src="/images/accuracy.png" alt="landing page" />
+            <img src={`${process.env.PUBLIC_URL}/images/accuracy.png`} alt="landing page" />
           </div>
           <div className="flex lg:flex-col items-center pt-5 justify-center lg:justify-start lg:!pt-20 flex-wrap sm:flex-nowrap text-white gap-5 ">
             <div className="flex flex-col justify-center items-center gap-2 opacity-50">
               <img
-                src="/social/Frame 93.png"
+                 src={`${process.env.PUBLIC_URL}/social/Frame 93.png`} 
                 alt="reviews"
                 className="max-w-[50px] lg:!max-w-[80px] "
               />
@@ -62,7 +62,7 @@ const Request = () => {
             </div>
             <div className="flex flex-col justify-center  items-center gap-2 opacity-50 ">
               <img
-                src="/social/Frame 94.png"
+                src={`${process.env.PUBLIC_URL}/social/Frame 94.png`} 
                 alt="reviews"
                 className="max-w-[50px] lg:!max-w-[80px]"
               />
@@ -70,7 +70,7 @@ const Request = () => {
             </div>
             <div className="flex flex-col overflow-x-hidden">
               <Link to="/about">
-                <img src="/social/Reviews.png" alt="reviews" />
+              <img src={`${process.env.PUBLIC_URL}/social/Reviews.png`} alt="reviews" />
               </Link>
               <h2 className="text-center text-sm">1k positive reviews</h2>
             </div>

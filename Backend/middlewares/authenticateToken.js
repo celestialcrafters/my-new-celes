@@ -3,6 +3,7 @@ const asyncHandler = require("express-async-handler");
 const pool = require("../config/db");
 
 const authenticateToken = asyncHandler(async (req, res, next) => {
+  console.log('authenticateToken middleware called for path:', req.path);
   const authHeader = req.headers["authorization"];
   const token = authHeader && authHeader.split(" ")[1];
 

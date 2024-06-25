@@ -50,7 +50,7 @@ const Donate = () => {
             </div>
           </div>
           <div>
-            <img src="/donate/child.png" alt="child" className="h-full object-cover w-full" />
+            <img src={`${process.env.PUBLIC_URL}/donate/child.png`} alt="child" className="h-full object-cover w-full" />
           </div>
         </article>
         <article className="bg-[#000033] p-5 sm:p-10 ">
@@ -159,7 +159,7 @@ const Donate = () => {
               </div>
             </div>
             <div className="flex flex-center">
-              <img src="/donate/hands.png" alt="hands"  />
+              <img src={`${process.env.PUBLIC_URL}/donate/hands.png`}  alt="hands"  />
             </div>
           </div>
 
@@ -180,7 +180,7 @@ const Donate = () => {
             </div> */}
             <div className="flex justify-center py-10">
               <button className="text-white text-sm uppercase font-semibold py-4 px-10 bg-blue-700 rounded-sm flex items-center justify-center gap-1">
-                <img src="/donate/heart.png" alt="heart" className="w-7" />
+                <img src={`${process.env.PUBLIC_URL}/donate/heart.png`} alt="heart" className="w-7" />
                 <p>Donate</p>
               </button>
             </div>

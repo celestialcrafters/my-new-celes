@@ -21,7 +21,7 @@ const Nav = () => {
       <nav className="flex justify-between items-center pt-7 pb-2 px-4 sm:!px-10">
         <div>
           <NavLink to="/">
-            <img src="/Assets/icons/logo.png" alt="logo" className="w-[80px]" />
+          <img src={`${process.env.PUBLIC_URL}/Assets/icons/logo.png`} alt="logo" className="w-[80px]" />
           </NavLink>
         </div>
         <div className=" lg:hidden text-white pb-2" onClick={toggleMenu}>
@@ -64,7 +64,7 @@ const Nav = () => {
               to="/donate"
               className="text-white flex justify-center items-center text-sm font-semibold py-3 ml-3 px-10 bg-blue-700 rounded-md gap-1"
             >
-              <img src="/donate/heart.png" alt="heart" className="w-7" />
+             <img src={`${process.env.PUBLIC_URL}/donate/heart.png`} alt="heart" className="w-7" />
               <p>Donate</p>
             </Link>
           </li>
@@ -83,7 +83,7 @@ const Nav = () => {
           <div>
             <NavLink to="/">
               <img
-                src="/Assets/icons/logo.png"
+              src={`${process.env.PUBLIC_URL}/Assets/icons/logo.png`} 
                 alt="logo"
                 className="w-[80px]"
               />
@@ -137,7 +137,7 @@ const Nav = () => {
               onClick={toggleMenu}
               className="text-white text-sm font-semibold py-3 px-10 bg-blue-700 rounded-md flex items-center justify-center gap-1"
             >
-              <img src="/donate/heart.png" alt="heart" className="w-7" />
+              <img src={`${process.env.PUBLIC_URL}/donate/heart.png`} alt="heart" className="w-7" />
               <p>Donate</p>
             </Link>
           </ul>

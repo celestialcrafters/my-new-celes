@@ -10,13 +10,13 @@ const mission = [
     topic: "OUR VISION",
     text1:
       "We envision a world where gender disparities in tech is a thing of the past. We foresee a Kenya where technology is not only 15% occupied by women but an increase with at least 10% in the next 3 years. We envision a Kenya where women are not only economically empowered but also have a voice that will impact upcoming generations of women that are able to speak up for themselves without fear of expression or judgement.",
-    img: "../Assets/BigImages/vision.png",
+    img: `${process.env.PUBLIC_URL}/Assets/BigImages/vision.png`,
   },
   {
     topic: "OUR MISSION",
     text1:
       "Celestial Crafters' mission is to drive innovation in the technology industry while fostering diversity, inclusivity, and empowerment. We are committed to promoting equality and reducing inequalities by providing equal opportunities for women, individuals from the LGBTQIA+ community, and persons with disabilities. Through our core values of innovation, integrity, teamwork, and sustainability, we strive to inspire the next generation of leaders while breaking down barriers and creating a more equitable and inclusive world.",
-    img: "../Assets/BigImages/mission.png",
+  img: `${process.env.PUBLIC_URL}/Assets/BigImages/mission.png`
   },
 ];
 
@@ -25,19 +25,19 @@ const about = [
     topic: "Our Unique Culture.",
     text1:
       "With our diverse team spanning the globe, Celestial Crafters leverages a rich tapestry of perspectives, experiences, and cultural insights. Our global presence grants us a unique advantage in understanding and catering to the diverse needs of clients worldwide. By tapping into the collective expertise of team members from Afghanistan to the United States, South Africa to India, Malawi to Ghana, Nigeria to Kenya, we offer innovative solutions that transcend geographical boundaries. This global perspective not only enriches our creativity and problem-solving capabilities but also enables us to navigate cultural nuances and market dynamics with ease. Ultimately, our diverse team empowers us to deliver tailor-made solutions that drive success and create impact on a global scale.",
-    img: "/Assets/aboutus1.jpg",
+    img: `${process.env.PUBLIC_URL}/Assets/aboutus1.jpg`
   },
   {
     topic: "Empowering Women in Tech.",
     text1:
       "Celestial Crafters is not just a tech company; it's a movement. Our commitment to empowering women in tech goes beyond our projects; it's a part of our core values",
-    img: "/Assets/aboutus2.jpg",
+  img: `${process.env.PUBLIC_URL}/Assets/aboutus2.jpg`
   },
   {
     topic: "Beyond the Code.",
     text1:
       "Success for us is measured beyond lines of code. We actively contribute to local economies, provide mentorship, and engage in philanthropy.",
-    img: "/Assets/aboutus3.jpg",
+     img: `${process.env.PUBLIC_URL}/Assets/aboutus3.jpg`
   },
 ];
 const lunchData1 = [
@@ -119,7 +119,7 @@ export default function About() {
         </h3>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-1">
           <img
-            src="/Assets/BigImages/clearimage.png"
+            src={`${process.env.PUBLIC_URL}/Assets/BigImages/clearimage.png`}
             alt="why choose us"
             className="hidden lg:flex"
           />
@@ -157,7 +157,7 @@ export default function About() {
       {/* launch celestial crafters */}
       <section className="what-we-do px-4 sm:!px-10 py-10">
         <img
-          src="/Assets/BigImages/aboutus-big.jpg"
+           src={`${process.env.PUBLIC_URL}/Assets/BigImages/aboutus-big.jpg`} 
           alt="what we do"
           className="w-full h-[300px] rounded-2xl mx-auto object-cover"
         />

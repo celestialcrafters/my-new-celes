@@ -4,26 +4,26 @@ const Partners = () => {
   const celestialCraftersData = [
     {
       id: "celestial_crafters_1",
-      imageUrl: "/partners/Rec21 1.png",
+      imageUrl: `${process.env.PUBLIC_URL}/partners/Rec21 1.png`,
     },
     {
       id: "celestial_crafters_2",
 
-      imageUrl: "/partners/Rec22 1.png",
+      imageUrl: `${process.env.PUBLIC_URL}/partners/Rec22 1.png`,
     },
     {
       id: "celestial_crafters_3",
 
-      imageUrl: "/partners/Rec23 1.jpg",
+      imageUrl: `${process.env.PUBLIC_URL}/partners/Rec23 1.jpg`,
     },
     {
       id: "celestial_crafters_4",
 
-      imageUrl: "/partners/Rec24 1.png",
+      imageUrl: `${process.env.PUBLIC_URL}/partners/Rec24 1.png`,
     },
     {
       id: "celestial_crafters_5",
-      imageUrl: "/partners/Rec25 1.png",
+      imageUrl: `${process.env.PUBLIC_URL}/partners/Rec25 1.png`,
     },
   ];
 
