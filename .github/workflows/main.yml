@@ -33,7 +33,7 @@ jobs:
     - name: Deploy frontend to FTP server
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
-        server: ftp://ftp.celestialcrafters.co.ke
+        server: ftp.celestialcrafters.co.ke
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./Frontend/build/
@@ -42,7 +42,7 @@ jobs:
     - name: Deploy backend to FTP server
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
-        server: ftp://ftp.celestialcrafters.co.ke
+        server: ftp.celestialcrafters.co.ke
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./Backend/
