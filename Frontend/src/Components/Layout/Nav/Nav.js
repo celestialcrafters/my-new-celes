@@ -12,10 +12,10 @@ const Nav = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-  const mobileButton = () => {
-    setShowProfile(true);
-    setIsOpen(false);
-  };
+  // const mobileButton = () => {
+  //   setShowProfile(true);
+  //   setIsOpen(false);
+  // };
   return (
     <>
       <nav className="flex justify-between items-center pt-7 pb-2 px-4 sm:!px-10">
