@@ -36,7 +36,7 @@ jobs:
         server: ftp://ftp.celestialcrafters.co.ke
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./Frontend/build
+        local-dir: ./Frontend/build/
         server-dir: /home/celest1/public_html/celestialcraftersweb
 
     - name: Deploy backend to FTP server
