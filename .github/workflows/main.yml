@@ -18,18 +18,32 @@ jobs:
       with:
         node-version: '14'
 
-    - name: Install dependencies
+    - name: Install frontend dependencies
+      working-directory: ./Frontend
       run: npm install
 
-    - name: Build project
+    - name: Build frontend
       working-directory: ./Frontend
       run: npm run build
       
-    - name: Deploy to FTP server
+    - name: Install backend dependencies
+      working-directory: ./Backend
+      run: npm install
+      
+    - name: Deploy frontend to FTP server
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
       with:
         ftp-server: ftp://ftp.celestialcrafters.co.ke
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./build 
-        server-dir: /public_html/celestialcraftersweb
+        local-dir: ./Frontend/build
+        server-dir: /home/celest1/public_html/celestialcraftersweb
+
+    - name: Deploy backend to FTP server
+      uses: SamKirkland/FTP-Deploy-Action@4.2.0
+      with:
+        ftp-server: ftp://ftp.celestialcrafters.co.ke
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./Backend
+        server-dir: /home/celesti1/nodejs
