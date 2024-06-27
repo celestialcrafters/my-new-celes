@@ -5,7 +5,6 @@ const DonateModal = ({ showModal, setShowModal }) => {
   const [step, setStep] = useState(1);
   const [donationType, setDonationType] = useState("one-time");
   const [donationAmount, setDonationAmount] = useState(5);
-  const [customAmount, setCustomAmount] = useState("");
   const [cardNumber, setCardNumber] = useState("");
   const [cardName, setCardName] = useState("");
   const [cardCvv, setCardCvv] = useState("");
@@ -44,13 +43,13 @@ const DonateModal = ({ showModal, setShowModal }) => {
     setDonationType(e.target.value);
   };
 
-  const handleAmountChange = (e) => {
-    setDonationAmount(parseInt(e.target.value));
-  };
+  // const handleAmountChange = (e) => {
+  //   setDonationAmount(parseInt(e.target.value));
+  // };
 
-  const handleCustomAmountChange = (e) => {
-    setCustomAmount(e.target.value);
-  };
+  // const handleCustomAmountChange = (e) => {
+  //   setCustomAmount(e.target.value);
+  // };
   const handleDonationAmountChange = (amount) => {
     setDonationAmount(amount);
   };

@@ -2,20 +2,20 @@ import "../Components/Donate/Donate.css";
 import { useState } from "react";
 
 const Donate = () => {
-  const [donationType, setDonationType] = useState("one-time");
+  // const [donationType, setDonationType] = useState("one-time");
   const [donationAmount, setDonationAmount] = useState();
-  const [customAmount, setCustomAmount] = useState("");
-  const handleDonationTypeChange = (e) => {
-    setDonationType(e.target.value);
-  };
+  // const [customAmount, setCustomAmount] = useState("");
+  // const handleDonationTypeChange = (e) => {
+  //   setDonationType(e.target.value);
+  // };
 
-  const handleAmountChange = (e) => {
-    setDonationAmount(parseInt(e.target.value));
-  };
+  // const handleAmountChange = (e) => {
+  //   setDonationAmount(parseInt(e.target.value));
+  // };
 
-  const handleCustomAmountChange = (e) => {
-    setCustomAmount(e.target.value);
-  };
+  // const handleCustomAmountChange = (e) => {
+  //   setCustomAmount(e.target.value);
+  // };
   const handleDonationAmountChange = (amount) => {
     setDonationAmount(amount);
   };
