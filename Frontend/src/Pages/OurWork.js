@@ -71,6 +71,7 @@ const OurWork = () => {
   const [yearFilter, setYearFilter] = useState("");
   const [tempCategoryFilter, setTempCategoryFilter] = useState("");
   const [tempYearFilter, setTempYearFilter] = useState("");
+  const [filterType, setFilterType] = useState("category"); // Default filter type
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
 
@@ -80,12 +81,10 @@ const OurWork = () => {
   const years = [
     ...new Set(softwareDevelopmentProjects.map((project) => project.startYear)),
   ];
-  const [filterType, setFilterType] = useState("category");
   const filteredProjects = softwareDevelopmentProjects.filter((project) => {
     return (
-      (!tempCategoryFilter || project.category === tempCategoryFilter) &&
-      (!tempYearFilter ||
-        parseInt(project.startYear) === parseInt(tempYearFilter))
+      (!categoryFilter || project.category === categoryFilter) &&
+      (!yearFilter || parseInt(project.startYear) === parseInt(yearFilter))
     );
   });
 
@@ -111,8 +110,8 @@ const OurWork = () => {
   }, [currentPage]);
 
   const handleResetFilters = () => {
-    setTempCategoryFilter("");
-    setTempYearFilter("");
+    setCategoryFilter("");
+    setYearFilter("");
     setCurrentPage(1);
     setShowProfile(false);
   };
@@ -123,6 +122,7 @@ const OurWork = () => {
     setCurrentPage(1);
     setShowProfile(false);
   };
+
 
   return (
     <div className="bg-[#000] text-white">
