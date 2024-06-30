@@ -38,7 +38,7 @@ const SDGS = () => {
         {
           id: "celestial_crafters_8",
           content: "Celestial Crafters collaborates with various stakeholders to advance its initiatives, fostering collaborative partnerships aimed at achieving gender equality and promoting sustainable development within the tech sector.",
-          imageUrl: ""
+          imageUrl: "SDGs/E-WEB-Goal-17.png"
         }
       ];
       
