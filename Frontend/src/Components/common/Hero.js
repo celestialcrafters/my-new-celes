@@ -2,8 +2,7 @@ const Hero = () => {
   return (
     <section
         className=" min-h-300px bg-center bg-cover w-full h-full md:bg-norepeamd:t"
-        style={{ backgroundImage: "url('Assets/workimage.jpg')" }}
-      >
+        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/Assets/workimage.jpg)` }}>
         <div className="px-4 sm:!px-10 py-10 text-white">
           <p className="pb-2 !text-3xl">We are</p>
           <h2 className="pb-2 !text-3xl topIntro">Celestial Crafters,</h2>

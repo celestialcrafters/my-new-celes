@@ -7,28 +7,28 @@ const WorkSolution = () => {
       title: "SOFTWARE DEVELOPMENT",
       description:
         "Our web development ensures seamless design and functionality across devices, prioritizing user experience.",
-      image: "../images/softwaredev.png",
+        image: `${process.env.PUBLIC_URL}/images/softwaredev.png`,
     },
     {
       id: 2,
       title: "DATA ANALYTICS",
       description:
         "Unlocking Data Insights: Our expertise spans descriptive, diagnostic, and predictive analytics, transforming raw data into actionable insights.",
-      image: "./images/dataanalytics.png",
+      image: `${process.env.PUBLIC_URL}/images/dataanalytics.png`
     },
     {
       id: 3,
       title: "PROJECT MANAGEMENT",
       description:
         "Our premier project management service excels in Agile, Scrum, and Waterfall methodologies, guaranteeing timely, budget-conscious, and high-quality project delivery.",
-      image: "../images/projectmanagemnet.png",
+      image: `${process.env.PUBLIC_URL}/images/projectmanagemnet.png`
     },
     {
       id: 4,
       title: "CYBERSECURITY",
       description:
         "With a comprehensive understanding of the latest cyber threats and cutting-edge security technologies, our team is equipped to fortify your digital infrastructure against unauthorized access, data breaches, and other cybersecurity risks.",
-      image: "../images/cybersecurity.png",
+       image: `${process.env.PUBLIC_URL}/images/cybersecurity.png`
     },
   ];
   return (
@@ -43,7 +43,7 @@ const WorkSolution = () => {
         <div className="mt-20 ">
           <div className="w-full h-full ">
             <img
-              src="/Assets/service.jpg"
+              src={`${process.env.PUBLIC_URL}/Assets/service.jpg`}
               alt="service"
               className="w-full h-full object-cover rounded-md"
             />

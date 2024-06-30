@@ -1,5 +1,5 @@
 import Location from "../../Assets/icons/Location.png";
-import copyright from "../../Assets/icons/copyright.png";
+import Copyright from "../../Assets/icons/copyright.png";
 import { FaLinkedin, FaTiktok, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { RiRedPacketLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
@@ -38,7 +38,7 @@ const Footer = () => {
     <div className="bg-black px-4 sm:!px-10 !py-10 overflow-hidden">
       <div className="flex lg:justify-between pb-10 flex-wrap justify-start gap-7">
         <div className="text-white">
-          <img className="w-20" src="/Assets/icons/logo.png" alt="Logo" />
+        <img className="w-20" src={`${process.env.PUBLIC_URL}/Assets/icons/logo.png`} alt="logo" />
           <div className="flex flex-col gap-1">
             {ContactInfo.map((item, index) => {
               return (
@@ -136,7 +136,7 @@ const Footer = () => {
       <hr className="bg-gradient-to-r from-blue-500 to-blue-200 my-10" />
       <div className="flex justify-between  items-center flex-wrap gap-3">
         <div className="flex items-center">
-          <img src={copyright} alt="Copyright" />
+          <img src={Copyright} alt="Copyright" />
           <p className="text-white ml-2">
             Celestial Crafters 2024 . All rights reserved
           </p>

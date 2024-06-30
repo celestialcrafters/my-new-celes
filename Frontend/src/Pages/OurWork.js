@@ -12,7 +12,7 @@ const softwareDevelopmentProjects = [
     description:
       "We developed an AI-powered healthcare solution to address the unique challenges faced by healthcare providers in Africa. Leveraging machine learning algorithms, the platform streamlines patient care, improves diagnosis accuracy, and optimizes resource allocation.",
     timeframe: "December 2023 - January 2024",
-    url: "/ourWork/work1.jpg",
+    url: `${process.env.PUBLIC_URL}/ourWork/work1.jpg`,
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const softwareDevelopmentProjects = [
     description:
       "Implemented a virtual assistant integration for a leading e-commerce platform, enhancing customer engagement and streamlining support services. Leveraged natural language processing and machine learning algorithms to develop an intelligent assistant capable of understanding and responding to customer inquiries in real-time.",
     timeframe: "July 2023 - April 2024",
-    url: "/ourWork/work2.jpg",
+    url: `${process.env.PUBLIC_URL}/ourWork/work2.jpg`,
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const softwareDevelopmentProjects = [
     description:
       "Developed a predictive maintenance system for a manufacturing company to optimize equipment uptime and reduce operational costs. Utilized sensor data analysis and predictive analytics to forecast equipment failures before they occur, enabling proactive maintenance and minimizing downtime.",
     timeframe: "October 2023 - march 2024",
-    url: "/ourWork/work3.jpg",
+    url: `${process.env.PUBLIC_URL}/ourWork/work3.jpg`,
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const softwareDevelopmentProjects = [
     description:
       "Developed a social media app with real-time messaging and post sharing features.",
     timeframe: "December 2023 - January 2024",
-    url: "/ourWork/social.jpg",
+    url: `${process.env.PUBLIC_URL}/ourWork/social.jpg`,
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const softwareDevelopmentProjects = [
     description:
       "Built a comprehensive finance management system for tracking expenses and budgeting.",
     timeframe: "September 2023 - February 2024",
-    url: "/ourWork/dataanalyshero.jpg",
+    url: `${process.env.PUBLIC_URL}/ourWork/dataanalyshero.jpg`,
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ const softwareDevelopmentProjects = [
     description:
       "Implemented an AI-powered chatbot for customer support and assistance.",
     timeframe: "August 2023 - April 2024",
-    url: "/ourWork/machine.jpg",
+    url: `${process.env.PUBLIC_URL}/ourWork/machine.jpg`                         ,
   }
 ];
 const OurWork = () => {
@@ -71,6 +71,7 @@ const OurWork = () => {
   const [yearFilter, setYearFilter] = useState("");
   const [tempCategoryFilter, setTempCategoryFilter] = useState("");
   const [tempYearFilter, setTempYearFilter] = useState("");
+  const [filterType, setFilterType] = useState("category"); // Default filter type
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
 
@@ -80,12 +81,10 @@ const OurWork = () => {
   const years = [
     ...new Set(softwareDevelopmentProjects.map((project) => project.startYear)),
   ];
-  const [filterType, setFilterType] = useState("category");
   const filteredProjects = softwareDevelopmentProjects.filter((project) => {
     return (
-      (!tempCategoryFilter || project.category === tempCategoryFilter) &&
-      (!tempYearFilter ||
-        parseInt(project.startYear) === parseInt(tempYearFilter))
+      (!categoryFilter || project.category === categoryFilter) &&
+      (!yearFilter || parseInt(project.startYear) === parseInt(yearFilter))
     );
   });
 
@@ -111,8 +110,8 @@ const OurWork = () => {
   }, [currentPage]);
 
   const handleResetFilters = () => {
-    setTempCategoryFilter("");
-    setTempYearFilter("");
+    setCategoryFilter("");
+    setYearFilter("");
     setCurrentPage(1);
     setShowProfile(false);
   };
@@ -123,6 +122,7 @@ const OurWork = () => {
     setCurrentPage(1);
     setShowProfile(false);
   };
+
 
   return (
     <div className="bg-[#000] text-white">
@@ -136,7 +136,7 @@ const OurWork = () => {
           onClick={() => setShowProfile(!showProfile)}
         >
           <p className="">Filter </p>
-          <img src="/Assets/icons/filter.png" alt="filter icon" />
+          <img src={`${process.env.PUBLIC_URL}/Assets/icons/filter.png`} alt="filter icon" />
         </button>
       </section>
       <section className="relative">

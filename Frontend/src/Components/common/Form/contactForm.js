@@ -22,7 +22,7 @@ export default function ContactForm() {
   const handleOnSubmit = (values, actions) => {
     axios({
       method: "POST",
-      url: 'http://localhost:5000/api/contact-us',
+      url: 'https://celestialcrafters.co.ke/api/contact-us',
       data: values,
     })
       .then((response) => {

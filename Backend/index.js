@@ -44,10 +44,17 @@ app.use("/api", require("./routes/formRoutes"));
 //reset password routes
 app.use("/api", require("./routes/passwordResetRoute"));
 
-app.use("/submit-form", require("./controllers/internshipForm"));
+app.use("/api/submit-form", require("./controllers/internshipForm"));
 
 app.use("/api", require("./routes/recurringPaymentRoute"));
 
+
+// Backend start link
+app.get('/', (req, res) => {
+
+  res.send('Welcome to Celestial crafers website Backend side');
+
+});
 
 //Error handling middleware
 app.use(errorHandler);

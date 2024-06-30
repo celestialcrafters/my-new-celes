@@ -1,18 +1,18 @@
 const asyncHandler = require('express-async-handler');
 const pool = require('../config/db');
 const validateFormData = require('../utils/validateFormData');
-const winston = require('winston');
 const { v4: uuidv4 } = require("uuid");
+const nodemailer = require('nodemailer');
 
-const logger = winston.createLogger({
-    level: 'info',
-    format: winston.format.json(),
-    transports: [
-        new winston.transports.Console(),
-        new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),
-        new winston.transports.File({ filename: 'logs/combined.log' }),
-    ],
-});
+// const logger = winston.createLogger({
+//     level: 'info',
+//     format: winston.format.json(),
+//     transports: [
+//         new winston.transports.Console(),
+//         new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),
+//         new winston.transports.File({ filename: 'logs/combined.log' }),
+//     ],
+// });
 
 const submitForm = asyncHandler(async (req, res) => {
     const validateErrors = validateFormData(req.body);
@@ -108,14 +108,82 @@ const submitForm = asyncHandler(async (req, res) => {
 
         await conn.commit();
         conn.release();
-        console.log(applicationId);
-        logger.info(`Form submitted successfully. UUID: ${uuid}`);
+        // console.log(applicationId);
+        // logger.info(`Form submitted successfully. UUID: ${uuid}`);
+        // Send email notification to admin
+        await sendAdminNotificationEmail(fullName, preferredInternship, transactionCode, paymentName);
+
+        // Send email acknowledgment to the intern
+        await sendInternAcknowledgmentEmail(fullName, email);
+
         res.status(200).json({ message: 'Form submitted successfully.' });
 
     } catch (err) {
-        logger.error('Error inserting data:', err);
+        // logger.error('Error inserting data:', err);
         res.status(500).json({ error: 'An error occurred while submitting the form.' });
     }
 });
+
+
+// Function to send email notification to admin
+async function sendAdminNotificationEmail(fullName, preferredInternship, transactionCode, paymentName) {
+    const transporter = nodemailer.createTransport({
+        host: "mail.celestialcrafters.co.ke",
+        port: 465,
+        secure: true,
+        auth: {
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS,
+        }
+    });
+
+    const mailOptions = {
+        from: `"Celestial Crafters" <${process.env.EMAIL_USER}>`,
+        to:  process.env.INTERNSHIP_EMAIL,
+        subject: 'New Intern Application',
+        html: `
+            <h1>New Intern Application</h1>
+            <p>A new intern has applied:</p>
+            <p><strong>Name:</strong> ${fullName}</p>
+            <p><strong>Preferred Internship:</strong> ${preferredInternship}</p>
+            <p><strong>Transaction Code:</strong> ${transactionCode}</p>
+            <p><strong>Payment Name:</strong> ${paymentName}</p>
+        `
+    };
+
+    await transporter.sendMail(mailOptions);
+}
+
+// Function to send acknowledgment email to intern
+async function sendInternAcknowledgmentEmail(fullName, email) {
+    const transporter = nodemailer.createTransport({
+        host: "mail.celestialcrafters.co.ke",
+          port: 465,
+          secure: true,
+          auth: {
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS,
+        }
+    });
+
+    const mailOptions = {
+        from: `"Celestial Crafters" <${process.env.EMAIL_USER}>`,
+        to: email,
+        subject: 'Internship Application Submission Received',
+        html: `
+            <h1>Internship Application Submission Received</h1>
+            <p>Dear ${fullName},</p>
+            <p>We have received your internship application. Thank you for applying!</p>
+            <p>We will review your application and get back to you soon.</p>
+            <p>Best regards,</p> <br/>
+            <br/>
+            <br/>
+            <p>The Celestial Crafters Team</p>
+        `
+    };
+
+    await transporter.sendMail(mailOptions);
+}
+
 
 module.exports = submitForm;

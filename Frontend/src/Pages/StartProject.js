@@ -19,17 +19,17 @@ const StartProject = () => {
   // Data for desktop version - First row of buttons
   const firstThreeSteps = [
     {
-      url: "/steps/01.png",
+      url: `${process.env.PUBLIC_URL}/steps/01.png`,
       desc: "We will identify project objectives and constraints. Define scope, budget, and timeline. Obtain approval from you and secure resources for the project.",
       position: { top: "30%", left: "0px" },
     },
     {
-      url: "/steps/02.png",
+      url: `${process.env.PUBLIC_URL}/steps/02.png`,
       desc: "We will develop a detailed project plan outlining tasks, milestones, and deliverables. Allocate resources, establish communication channels, and define roles and responsibilities. Conduct risk assessment and develop mitigation strategies.",
       position: { top: "30%", left: "30%" },
     },
     {
-      url: "/steps/03.png",
+      url: `${process.env.PUBLIC_URL}/steps/03.png`,
       desc: "We will implement the project plan according to the defined scope, schedule, and budget. Assign tasks to team members, monitor progress, and manage changes.",
       position: { top: "30%", right: "0%" },
     },
@@ -37,17 +37,17 @@ const StartProject = () => {
   // Data for desktop version - Second row of buttons
   const secondThreeSteps = [
     {
-      url: "/steps/06.png",
+      url: `${process.env.PUBLIC_URL}/steps/06.png`,
       desc: "We will complete all project deliverables and ensure we obtain formal acceptance from you. We will also conduct final inspections and resolve any outstanding issues.",
       position: { top: "50%", left: "0px" },
     },
     {
-      url: "/steps/05.png",
+      url: `${process.env.PUBLIC_URL}/steps/05.png`,
       desc: "We will conduct post-project reviews to evaluate performance and identify lessons learned. Then analyse successes and challenges encountered during project execution.",
       position: { top: "50%", left: "40%" },
     },
     {
-      url: "/steps/04.png",
+      url: `${process.env.PUBLIC_URL}/steps/04.png`,
       desc: "We will track key performance indicators and milestones to ensure alignment with project objectives. Evaluate outcomes and impacts, and make adjustments as necessary to optimise project success.",
       position: { top: "50%", right: "0%" },
     },
@@ -55,17 +55,17 @@ const StartProject = () => {
   // Data for mobile version - First row of buttons
   const firstMobileSteps = [
     {
-      url: "/mobileSteps/step initiation.png",
+      url: `${process.env.PUBLIC_URL}/mobileSteps/step initiation.png`,
       desc: "We will identify project objectives and constraints. Define scope, budget, and timeline. Obtain approval from you and secure resources for the project.",
       position: { top: "10%", left: "0%" },
     },
     {
-      url: "/mobileSteps/planning.png",
+      url: `${process.env.PUBLIC_URL}/mobileSteps/planning.png`,
       desc: "We will develop a detailed project plan outlining tasks, milestones, and deliverables. Allocate resources, establish communication channels, and define roles and responsibilities. Conduct risk assessment and develop mitigation strategies.",
       position: { top: "25%", left: "0%" },
     },
     {
-      url: "/mobileSteps/execution.png",
+      url: `${process.env.PUBLIC_URL}/mobileSteps/execution.png`,
       desc: "We will implement the project plan according to the defined scope, schedule, and budget. Assign tasks to team members, monitor progress, and manage changes.",
       position: { top: "48%", left: "0%" },
     },
@@ -73,17 +73,17 @@ const StartProject = () => {
   // Data for mobile version - Second row of buttons
   const secondMobileSteps = [
     {
-      url: "/mobileSteps/evaluation.png",
+      url: `${process.env.PUBLIC_URL}/mobileSteps/evaluation.png`,
       desc: "We will track key performance indicators and milestones to ensure alignment with project objectives. Evaluate outcomes and impacts, and make adjustments as necessary to optimise project success.",
       position: { top: "65%", left: "0%" },
     },
     {
-      url: "/mobileSteps/05.png",
+      url: `${process.env.PUBLIC_URL}/mobileSteps/05.png`,
       desc: "We will conduct post-project reviews to evaluate performance and identify lessons learned. Then analyse successes and challenges encountered during project execution.",
       position: { top: "85%", left: "0%" },
     },
     {
-      url: "/mobileSteps/closing.png",
+      url: `${process.env.PUBLIC_URL}/mobileSteps/closing.png`,
       desc: "We will complete all project deliverables and ensure we obtain formal acceptance from you. We will also conduct final inspections and resolve any outstanding issues.",
       position: { top: "100%", left: "0%" },
     },

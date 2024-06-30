@@ -9,20 +9,20 @@ import {
 import { RiRedPacketLine } from "react-icons/ri";
 
 const Donate = () => {
-  const [donationType, setDonationType] = useState("one-time");
+  // const [donationType, setDonationType] = useState("one-time");
   const [donationAmount, setDonationAmount] = useState();
-  const [customAmount, setCustomAmount] = useState("");
-  const handleDonationTypeChange = (e) => {
-    setDonationType(e.target.value);
-  };
+  // const [customAmount, setCustomAmount] = useState("");
+  // const handleDonationTypeChange = (e) => {
+  //   setDonationType(e.target.value);
+  // };
 
-  const handleAmountChange = (e) => {
-    setDonationAmount(parseInt(e.target.value));
-  };
+  // const handleAmountChange = (e) => {
+  //   setDonationAmount(parseInt(e.target.value));
+  // };
 
-  const handleCustomAmountChange = (e) => {
-    setCustomAmount(e.target.value);
-  };
+  // const handleCustomAmountChange = (e) => {
+  //   setCustomAmount(e.target.value);
+  // };
   const handleDonationAmountChange = (amount) => {
     setDonationAmount(amount);
   };
@@ -91,11 +91,7 @@ const Donate = () => {
             </div>
           </div>
           <div>
-            <img
-              src="/donate/child.png"
-              alt="child"
-              className="h-full object-cover w-full"
-            />
+            <img src={`${process.env.PUBLIC_URL}/donate/child.png`} alt="child" className="h-full object-cover w-full" />
           </div>
         </article>
         <article className="bg-[#000033] p-5 sm:p-10 ">
@@ -201,13 +197,15 @@ const Donate = () => {
                 <label>
                   Dedicate my donation in honor or in memory of someone
                 </label>
-              </div> */}
-      {/* </div> */}
-      {/* <div className="flex flex-center">
-              <img src="/donate/hands.png" alt="hands" />
-            </div> */}
-      {/* </div> */}
-      {/* <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center md:justify-between gap-6 lg:gap-16 mt-3">
+              </div>
+            </div>
+            <div className="flex flex-center">
+              <img src="/donate/hands.png" alt="hands"  />
+            </div>
+          </div>
+
+          <div className="px-4 sm:!px-10 md:!px-20 py-4">
+            {/* <div className="flex flex-row flex-wrap lg:flex-nowrap justify-center md:justify-between gap-6 lg:gap-16 mt-3">
               {[
                 "donate monthly",
                 "donate once",
@@ -221,16 +219,8 @@ const Donate = () => {
                 );
               })}
             </div> */}
-      {/* </div> */}
-      {/* </article> */}
-      <article className="text-white  p-5 sm:p-10 ">
-        <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-center lg:items-start">
-          <div className="px-4 sm:!px-10 md:!px-20 py-4">
-            <div className="flex justify-center">
-              <button
-                className="text-white text-sm uppercase font-semibold py-4 px-10 bg-blue-700 rounded-sm flex items-center justify-center gap-1"
-                onClick={openModal}
-              >
+            <div className="flex justify-center py-10">
+              <button className="text-white text-sm uppercase font-semibold py-4 px-10 bg-blue-700 rounded-sm flex items-center justify-center gap-1">
                 <img src="/donate/heart.png" alt="heart" className="w-7" />
                 <p>Donate</p>
               </button>

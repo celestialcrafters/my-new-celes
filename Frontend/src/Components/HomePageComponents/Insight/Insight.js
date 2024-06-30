@@ -5,21 +5,21 @@ const Explore = () => {
   const [active, setActive] = useState(1);
   const exploreWorlds = [
     {
-      imgUrl: "/Assets/aboutus1.jpg",
+      imgUrl: process.env.PUBLIC_URL + "/Assets/aboutus1.jpg",
       id: 1,
       title: "Our Unique Culture.",
       text: "At the heart of Celestial Crafters is a unique culture that celebrates diversity and inclusion.",
       buttonText: "Read More",
     },
     {
-      imgUrl:"/Assets/aboutus2.jpg",
+      imgUrl: process.env.PUBLIC_URL + "/Assets/aboutus2.jpg",
       id: 2,
       title: "Empowering Women in Tech.",
       text: "Celestial Crafters is not just a tech company; it's a movement. Our commitment to empowering women in tech goes beyond our projects.",
       buttonText: "Read More",
     },
     {
-      imgUrl: "/Assets/aboutus3.jpg",
+      imgUrl:process.env.PUBLIC_URL +  "/Assets/aboutus3.jpg",
       id: 3,
       title: "Beyond the Code.",
       text: "Success for us is measured beyond lines of code. We actively contribute to local economies, provide mentorship, and engage in philanthropy.",

@@ -14,21 +14,21 @@ const servicesData = [
     title: "John Smith",
     role:" CEO of XYZ Company",
     description:"Celestial Crafters transformed our online presence with their impeccable website development skills. Their attention to detail and dedication to our project ensured a seamless experience from start to finish.",
-    url:"/temsti/Ellipse 72.png"
+     url: `${process.env.PUBLIC_URL}/temsti/Ellipse 72.png`
     
   },
   {
     title: "Sarah Lee", 
     role:" Manager at Global Solutions Corp",
     description:"Celestial Crafters exceeded our expectations in every way. From project management to SEO optimization, their expertise and dedication were evident throughout the entire process. We highly recommend Celestial Crafters to anyone looking for exceptional tech solutions.",
-    url:"/temsti/Ellipse 75.png"
+     url: `${process.env.PUBLIC_URL}/temsti/Ellipse 75.png`
     
   },
   {
     title: " Emily Rodriguez",
     role:" CEO of InnovateTech Solutions",
     description:"Working with Celestial Crafters was a game-changer for us. Their commitment to diversity and inclusion, combined with their expertise in UX/UI design and SEO, helped us elevate our digital presence. I highly recommend them to any business looking to drive success online.",
-    url:"/temsti/Ellipse 70.png"
+    url: `${process.env.PUBLIC_URL}/temsti/Ellipse 70.png`
    
     
   }

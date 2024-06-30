@@ -70,25 +70,25 @@ const Internship = () => {
   const guests = [
     {
       id: 1,
-      img: "/ourWork/Florent.jpeg",
+      img:  `${process.env.PUBLIC_URL}/ourWork/Florent.jpeg`,
       name: "Florent Nduwayezu",
       job: " Investments | Private Equity & Venture Capital | Africa",
     },
     {
       id: 2,
-      img: "/ourWork/Matt.jpg",
+      img: `${process.env.PUBLIC_URL}/ourWork/Matt.jpg`,
       name: "Matt Magera",
       job: "Co-Creator Talent",
     },
     {
       id: 3,
-      img: "/Assets/BigImages/Aenia.jpeg",
+      img: `${process.env.PUBLIC_URL}/Assets/BigImages/Aenia.jpeg`,
       name: "Aenia Amin",
       job: "Data Analytics Expert | Software Engineer | Lead Internship Manager at Celestial Crafters.",
     },
     {
       id: 4,
-      img: "/Assets/BigImages/avatar1.png",
+      img: `${process.env.PUBLIC_URL}/Assets/BigImages/avatar1.png`,
       name: "Serah Kamau",
       job: "Founder and CEO Celestial Crafters | Software Engineer | Automotive Engineer",
     },
@@ -242,7 +242,7 @@ const Internship = () => {
             </div>
           </div>
           <img
-            src="/serviceIcon/Line 3.png"
+            src={`${process.env.PUBLIC_URL}/serviceIcon/Line 3.png`} 
             alt="line"
             className="h-[4px] w-full  md:w-[50%] mx-auto"
           />
