@@ -105,7 +105,7 @@ const ContactInfo = [
         Celestial Crafters Internship Program
       </h1>
       <div className="intro">
-        <h2>This is a 6-week Virtual Internship Program opportunity.</h2>
+        <h2 className="text-blue-400">A SUMMER (REMOTE) INTERNSHIP PROGRAM FOR ALL</h2>
         <h3 style={{ fontWeight: "bold" }}>
           This Internship offers the following perks:
         </h3>

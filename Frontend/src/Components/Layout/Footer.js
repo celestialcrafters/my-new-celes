@@ -1,6 +1,6 @@
 import Location from "../../Assets/icons/Location.png";
 import Copyright from "../../Assets/icons/copyright.png";
-import { FaLinkedin, FaTiktok, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaTiktok, FaPhone, FaWhatsapp,  FaInstagram  } from "react-icons/fa";
 import { RiRedPacketLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 export const ContactInfo = [
@@ -24,13 +24,18 @@ const social = [
   {
     icon: <FaLinkedin />,
     info: "Celestial Crafters",
-    page: "https://www.linkedin.com/company/celestialcrafters/",
+    page: "https://www.linkedin.com/company/celestial-crafters/?viewAsMember=true",
   },
   {
     icon: <FaTiktok />,
     info: "Celestial crafters",
-    page: "https://www.tiktok.com/@celestial_crafters?_t=8jTAoiI3ZEE&_r=1",
+    page: " https://www.tiktok.com/@celestialcrafters8?lang=en",
   },
+  {
+    icon: <FaInstagram/>,
+    info: "Celestial Crafters",
+    page: "https://www.instagram.com/celestialcrafterstech.co/",
+  }
 ];
 
 const Footer = () => {
