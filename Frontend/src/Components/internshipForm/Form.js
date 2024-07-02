@@ -10,8 +10,8 @@ const Form = () => {
 const ContactInfo = [
   {
     icon: <RiRedPacketLine />,
-    info: "internships@celestialcrafters.co.ke",
-    page: "mailto:internships@celestialcrafters.co.ke",
+    info: "bootcamp@celestialcrafters.co.ke",
+    page: "mailto:bootcamp@celestialcrafters.co.ke",
   },
   {
     icon: <FaWhatsapp />,
@@ -29,7 +29,7 @@ const ContactInfo = [
     highestQualification: "",
     college: "",
     currentAcademicYear: "",
-    preferredInternship: "",
+    preferredinternship: "",
     skillLevel: "",
     howDidYouLearnAboutUs: "",
     otherSource: "",
@@ -74,7 +74,7 @@ const ContactInfo = [
         highestQualification: "",
         college: "",
         currentAcademicYear: "",
-        preferredInternship: "",
+        preferredinternship: "",
         skillLevel: "",
         howDidYouLearnAboutUs: "",
         otherSource: "",
@@ -102,12 +102,12 @@ const ContactInfo = [
   return (
     <section className="" style={{ background: "#091536" }}>
       <h1 className=" mx-auto md:text-center md:pb-24 header">
-        Celestial Crafters Internship Program
+        Celestial Crafters bootcamp Program
       </h1>
       <div className="intro">
-        <h2 className="text-blue-400">A SUMMER (REMOTE) INTERNSHIP PROGRAM FOR ALL</h2>
+        <h2 className="text-blue-400">A SUMMER (REMOTE) BOOTCAMP PROGRAM FOR ALL</h2>
         <h3 style={{ fontWeight: "bold" }}>
-          This Internship offers the following perks:
+          This bootcamp offers the following perks:
         </h3>
         <ul className="list">
           <li>
@@ -118,7 +118,7 @@ const ContactInfo = [
           </li>
           <li>
             2. Work on real-time projects, allowing interns to apply their
-            skills and knowledge in real-world settings. The internship program
+            skills and knowledge in real-world settings. The bootcamp program
             also serves as a platform for professional development and skill
             enhancement.
           </li>
@@ -143,8 +143,8 @@ const ContactInfo = [
           <li>6. Get personalized guidance and 24/7 support.</li>
           <li>7. Offer letter from Celestial Crafters.</li>
           <li>
-            8. Internship Certificate - A verifiable completion certificate is
-            provided after the successful completion of the internship.
+            8. Certificate - A verifiable completion certificate is
+            provided after the successful completion of the bootcamp.
           </li>
           <li>
             9. Letter of recommendation - A verifiable recommendation letter is
@@ -285,13 +285,13 @@ const ContactInfo = [
             onChange={handleChange}
           />
           <select
-            name="preferredInternship"
-            value={formData.preferredInternship}
+            name="preferredinternship"
+            value={formData.preferredinternship}
             onChange={handleChange}
             style={{ color: "black" }}
             className="mt-10 p-2 block w-full border-gray-300 rounded-md focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
           >
-            <option value="">Select Preferred Internship Specialization</option>
+            <option value="">Select Preferred bootcamp Specialization</option>
             <option value="frontend web development">
               Frontend Web Development
             </option>
@@ -361,9 +361,9 @@ const ContactInfo = [
           ></textarea>
           <div className="payment">
             <p className="mt-8 mb-4">
-              A non-refundable fee of 30 USD that will cater for live internship
+              A non-refundable fee of 30 USD that will cater for live bootcamp
               coverage with our industry experts twice a week for the period
-              long of internships, 24/7 customer support, 2 mentorship sessions
+              long of bootcamps, 24/7 customer support, 2 mentorship sessions
               and networking opportunities.
             </p>
             <p className="" style={{ fontWeight: "bold", fontSize: "32px" }}>

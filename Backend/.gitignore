@@ -1,21 +1,2 @@
 /node_modules
 .env
- "fullName": "Casst lel",
-        "email": "cassylele@gmail.com",
-        
-        "gender": "female",
-        "phoneNumber": "+254113120575",
-        "country": "Kenya",
-      "highestQualification": "college/university",
-        "college": "dekut",
-        "currentAcademicYear": "4",
-        "preferredInternship": "frontend web development",
-        "skillLevel": "mid",
-        
-        "howDidYouLearnAboutUs": "social media",
-        "otherSource": "",
-        "inquiry": "",
-        
-        "howGainedSkills": "",
-        "transactionCode": "123",
-        "paymentName": "Cassy lel"

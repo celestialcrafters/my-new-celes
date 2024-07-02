@@ -23,8 +23,8 @@ const Request = () => {
             </div>
             <div>
               <img
-                 src={`${process.env.PUBLIC_URL}/images/accuracy.png`}
-                 className="!flex lg:!hidden mx-auto"
+                src={`${process.env.PUBLIC_URL}/images/accuracy.png`}
+                className="!flex lg:!hidden mx-auto"
                 alt="landing page"
               />
             </div>
@@ -40,6 +40,12 @@ const Request = () => {
               >
                 Start A Project
               </Link>
+              <Link to="/internshipForm"
+              className="px-2 py-3 md:text-sm  bg-blue-700 flex justify-center text-white rounded-3 w-full"
+              >
+               Apply Bootcamp
+              </Link>
+
               <Link
                 to="/work"
                 className="border-2 flex  md:text-sm  justify-center border-blue-600 px-2 py-3 bg-transparent text-white rounded-3 w-full"
@@ -49,12 +55,15 @@ const Request = () => {
             </div>
           </div>
           <div className=" col-span-3 !hidden lg:!flex">
-            <img src={`${process.env.PUBLIC_URL}/images/accuracy.png`} alt="landing page" />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/accuracy.png`}
+              alt="landing page"
+            />
           </div>
           <div className="flex lg:flex-col items-center pt-5 justify-center lg:justify-start lg:!pt-20 flex-wrap sm:flex-nowrap text-white gap-5 ">
             <div className="flex flex-col justify-center items-center gap-2 opacity-50">
               <img
-                 src={`${process.env.PUBLIC_URL}/social/Frame 93.png`} 
+                src={`${process.env.PUBLIC_URL}/social/Frame 93.png`}
                 alt="reviews"
                 className="max-w-[50px] lg:!max-w-[80px] "
               />
@@ -62,7 +71,7 @@ const Request = () => {
             </div>
             <div className="flex flex-col justify-center  items-center gap-2 opacity-50 ">
               <img
-                src={`${process.env.PUBLIC_URL}/social/Frame 94.png`} 
+                src={`${process.env.PUBLIC_URL}/social/Frame 94.png`}
                 alt="reviews"
                 className="max-w-[50px] lg:!max-w-[80px]"
               />
@@ -70,7 +79,10 @@ const Request = () => {
             </div>
             <div className="flex flex-col overflow-x-hidden">
               <Link to="/about">
-              <img src={`${process.env.PUBLIC_URL}/social/Reviews.png`} alt="reviews" />
+                <img
+                  src={`${process.env.PUBLIC_URL}/social/Reviews.png`}
+                  alt="reviews"
+                />
               </Link>
               <h2 className="text-center text-sm">1k positive reviews</h2>
             </div>

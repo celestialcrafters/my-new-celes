@@ -52,7 +52,7 @@ const Internship = () => {
     {
       id: 1,
       title:
-        "6 Weeks Self-Paced Internship with 8 hours live mentorship session with Celestial Crafters experts.",
+        "6 Weeks Self-Paced bootcamp with 8 hours live mentorship session with Celestial Crafters experts.",
     },
     {
       id: 2,
@@ -84,7 +84,7 @@ const Internship = () => {
       id: 3,
       img: `${process.env.PUBLIC_URL}/Assets/BigImages/Aenia.jpeg`,
       name: "Aenia Amin",
-      job: "Data Analytics Expert | Software Engineer | Lead Internship Manager at Celestial Crafters.",
+      job: "Data Analytics Expert | Software Engineer | Lead bootcamp Manager at Celestial Crafters.",
     },
     {
       id: 4,
@@ -106,7 +106,7 @@ const Internship = () => {
     },
     {
       icon: <RiRedPacketLine />,
-      info: "internships@celestialcrafters.co.ke OR info@celestialcrafters.co.ke ",
+      info: "bootcamp@celestialcrafters.co.ke OR info@celestialcrafters.co.ke ",
       page: "mailto:info@celestialcrafters.co.ke",
     },
   ];
@@ -119,14 +119,14 @@ const Internship = () => {
         >
           <div className="px-4 sm:!px-10 py-10 text-white flex justify-center">
             <h2 className="pb-2 !text-3xl text-center uppercase">
-              A Summer Internship Program For All
+              A Summer bootcamp Program For All
             </h2>
           </div>
         </section>
         <section className="text-white px-4 sm:!px-10 md:!px-16 py-20">
           <h2 className="underline text-2xl pb-3">
             {" "}
-            Welcome to Celestial Crafters Internship Program!
+            Welcome to Celestial Crafters bootcamp Program!
           </h2>
           <p>
             Ever wanted to get started on your entrepreneurial journey and don't
