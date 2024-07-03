@@ -47,13 +47,13 @@ function validateFormData(data) {
         }
     }
 
-    // Preferred Internship Specialization
+    // Preferred internship Specialization
     const validSpecializations = [
         'frontend web development', 'ui/ux design', 'database management', 'product management', 'cybersecurity',
         'backend web development', 'fullstack web development', 'graphic designer', 'technical writer', 'mobile development',
         'human resource', 'finance', 'social media manager', 'Data Analytics'
     ];
-    if (!data.preferredInternship || !validSpecializations.includes(data.preferredInternship.toLowerCase().trim())) {
+    if (!data.preferredinternship || !validSpecializations.includes(data.preferredinternship.toLowerCase().trim())) {
         errors.push('Preferred internship specialization is required.');
     }
 

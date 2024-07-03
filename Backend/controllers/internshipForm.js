@@ -29,7 +29,7 @@ const submitForm = asyncHandler(async (req, res) => {
         highestQualification,
         college,
         currentAcademicYear,
-        preferredInternship,
+        preferredinternship,
         skillLevel,
         howDidYouLearnAboutUs,
         otherSource,
@@ -82,7 +82,7 @@ const submitForm = asyncHandler(async (req, res) => {
                 String(phoneNumber).trim(),
                 country,
                 highestQualification,
-                preferredInternship,
+                preferredinternship,
                 skillLevel,
                 howDidYouLearnAboutUs,
                 howDidYouLearnAboutUs.toLowerCase() === 'other' ? otherSource : null,
@@ -111,7 +111,7 @@ const submitForm = asyncHandler(async (req, res) => {
         // console.log(applicationId);
         // logger.info(`Form submitted successfully. UUID: ${uuid}`);
         // Send email notification to admin
-        await sendAdminNotificationEmail(fullName, preferredInternship, transactionCode, paymentName);
+        await sendAdminNotificationEmail(fullName, preferredinternship, transactionCode, paymentName);
 
         // Send email acknowledgment to the intern
         await sendInternAcknowledgmentEmail(fullName, email);
@@ -126,7 +126,7 @@ const submitForm = asyncHandler(async (req, res) => {
 
 
 // Function to send email notification to admin
-async function sendAdminNotificationEmail(fullName, preferredInternship, transactionCode, paymentName) {
+async function sendAdminNotificationEmail(fullName, preferredinternship, transactionCode, paymentName) {
     const transporter = nodemailer.createTransport({
         host: "mail.celestialcrafters.co.ke",
         port: 465,
@@ -139,13 +139,13 @@ async function sendAdminNotificationEmail(fullName, preferredInternship, transac
 
     const mailOptions = {
         from: `"Celestial Crafters" <${process.env.EMAIL_USER}>`,
-        to:  process.env.INTERNSHIP_EMAIL,
+        to:  process.env.internship_EMAIL,
         subject: 'New Intern Application',
         html: `
             <h1>New Intern Application</h1>
             <p>A new intern has applied:</p>
             <p><strong>Name:</strong> ${fullName}</p>
-            <p><strong>Preferred Internship:</strong> ${preferredInternship}</p>
+            <p><strong>Preferred internship:</strong> ${preferredinternship}</p>
             <p><strong>Transaction Code:</strong> ${transactionCode}</p>
             <p><strong>Payment Name:</strong> ${paymentName}</p>
         `
@@ -169,9 +169,9 @@ async function sendInternAcknowledgmentEmail(fullName, email) {
     const mailOptions = {
         from: `"Celestial Crafters" <${process.env.EMAIL_USER}>`,
         to: email,
-        subject: 'Internship Application Submission Received',
+        subject: 'internship Application Submission Received',
         html: `
-            <h1>Internship Application Submission Received</h1>
+            <h1>internship Application Submission Received</h1>
             <p>Dear ${fullName},</p>
             <p>We have received your internship application. Thank you for applying!</p>
             <p>We will review your application and get back to you soon.</p>

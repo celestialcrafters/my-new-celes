@@ -7,7 +7,7 @@ import About from "./Pages/About";
 import Layout from "./Components/Layout/Layout";
 import StartProject from "./Pages/StartProject";
 import Donate from "./Pages/Donate";
-import Internship from "./Pages/Internship";
+import Internship from "./Pages/internship";
 import InternshipForm from "./Pages/internshipForm";
 
 export default function App() {

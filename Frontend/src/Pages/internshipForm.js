@@ -1,4 +1,4 @@
-import Form from '../Components/InternshipForm/Form';
+import Form from '../Components/internshipForm/Form';
 
 const InternshipForm = () => {
     return (
