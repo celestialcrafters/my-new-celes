@@ -139,13 +139,14 @@ const Footer = () => {
         </div>
       </div>
       <hr className="bg-gradient-to-r from-blue-500 to-blue-200 my-10" />
-      <div className="flex justify-between  items-center flex-wrap gap-3">
+      <div className="flex justify-center items-center flex-wrap gap-3">
         <div className="flex items-center">
           <img src={Copyright} alt="Copyright" />
           <p className="text-white ml-2">
-            Celestial Crafters 2024 . All rights reserved
+            Celestial Crafters 2024 . All rights reserved 
           </p>
         </div>
+        <div>|</div>
         <div className="flex gap-4">
           {social.map((item, index) => {
             return (
