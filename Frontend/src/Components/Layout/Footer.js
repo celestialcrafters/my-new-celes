@@ -1,7 +1,7 @@
 import Location from "../../Assets/icons/Location.png";
 import Copyright from "../../Assets/icons/copyright.png";
 import { FaLinkedin, FaTiktok, FaPhone, FaWhatsapp, FaMastodon, FaFacebookF, FaInstagram, FaYoutube  } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
 import { RiRedPacketLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 export const ContactInfo = [
@@ -38,7 +38,7 @@ const social = [
     page: "https://www.instagram.com/celestialcrafterstech.co/",
   },
   {
-    icon: <FaXTwitter />,
+    icon: <BsTwitterX />,
     info: "Celestial Crafters",
     page: "https://x.com/celestialc24"
   },
