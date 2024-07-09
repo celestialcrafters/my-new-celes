@@ -37,7 +37,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./Frontend/build/
-        server-dir: /home/celest1/public_html/celestialcraftersweb/
+        server-dir: /
 
     - name: Deploy backend to FTP server
       uses: SamKirkland/FTP-Deploy-Action@4.2.0
@@ -46,4 +46,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./Backend/
-        server-dir: /home/celesti1/nodejs/
+        server-dir: /nodejs/
