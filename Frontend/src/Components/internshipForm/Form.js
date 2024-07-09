@@ -361,7 +361,7 @@ const ContactInfo = [
           ></textarea>
           <div className="payment">
             <p className="mt-8 mb-4">
-              A non-refundable fee of 30 USD that will cater for live bootcamp
+              A non-refundable fee of 12 USD that will cater for live bootcamp
               coverage with our industry experts twice a week for the period
               long of bootcamps, 24/7 customer support, 2 mentorship sessions
               and networking opportunities.

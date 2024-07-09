@@ -172,7 +172,7 @@ const Internship = () => {
             </div>
           </div>
           <div className="mt-20">
-            <h3 className="uppercase text-2xl">WHAT DOES $30 GET YOU?</h3>
+            <h3 className="uppercase text-2xl">WHAT DOES $12 GET YOU?</h3>
             <div className="mt-10  flex justify-between flex-wrap">
               <div>
                 {reasons.map((service) => {

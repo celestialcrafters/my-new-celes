@@ -35,7 +35,7 @@ const social = [
   {
     icon: <FaInstagram />,
     info: "Celestial crafters",
-    page: "https://www.instagram.com/celestialcrafterstech.co/ ",
+    page: "https://www.instagram.com/celestialcrafterstech.co/",
   },
   {
     icon: <FaXTwitter />,
