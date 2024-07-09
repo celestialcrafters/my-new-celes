@@ -1,6 +1,7 @@
 import Location from "../../Assets/icons/Location.png";
 import Copyright from "../../Assets/icons/copyright.png";
-import { FaLinkedin, FaTiktok, FaPhone, FaWhatsapp,  FaInstagram  } from "react-icons/fa";
+import { FaLinkedin, FaTiktok, FaPhone, FaWhatsapp, FaMastodon, FaFacebookF, FaInstagram, FaYoutube  } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 import { RiRedPacketLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 export const ContactInfo = [
@@ -32,10 +33,31 @@ const social = [
     page: " https://www.tiktok.com/@celestialcrafters8?lang=en",
   },
   {
-    icon: <FaInstagram/>,
-    info: "Celestial Crafters",
+    icon: <FaInstagram />,
+    info: "Celestial crafters",
     page: "https://www.instagram.com/celestialcrafterstech.co/",
-  }
+  },
+  {
+    icon: <BsTwitterX />,
+    info: "Celestial Crafters",
+    page: "https://x.com/celestialc24"
+  },
+  {
+    icon: <FaFacebookF/>,
+    info: "Celestial Crafters",
+    page: "https://www.facebook.com/profile.php?id=61561725759744"
+  },
+  {
+    icon: <FaYoutube/>,
+    info: "Celestial Crafters",
+    page: "https://www.youtube.com/channel/UCjAAe8r_pwGuEut7EO0_8Vg"
+  },
+  {
+    icon: <FaMastodon/>,
+    info: "Celestial Crafters",
+    page: "https://mastodon.social/@celestialcrafters"
+  },
+  
 ];
 
 const Footer = () => {
