@@ -53,7 +53,7 @@ export const TeamData = [
     role: "Lead Software Developer",
     country: "Kenya",
     bio: "Creative powerhouse spearheading software development with precision and innovation. Ensures seamless project execution.",
-    img: process.env.PUBLIC_URL + "/Assets/BigImages/avatar3.png",
+    img: process.env.PUBLIC_URL + "/Assets/BigImages/avatar3.jpeg",
   },
   {
     id: 8,
