@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/celestialcraftersweb/static/css/main.0a48c1ee.css",
-    "main.js": "/celestialcraftersweb/static/js/main.3434a1b7.js",
+    "main.js": "/celestialcraftersweb/static/js/main.dde9250f.js",
     "index.html": "/celestialcraftersweb/index.html",
     "main.0a48c1ee.css.map": "/celestialcraftersweb/static/css/main.0a48c1ee.css.map",
-    "main.3434a1b7.js.map": "/celestialcraftersweb/static/js/main.3434a1b7.js.map"
+    "main.dde9250f.js.map": "/celestialcraftersweb/static/js/main.dde9250f.js.map"
   },
   "entrypoints": [
     "static/css/main.0a48c1ee.css",
-    "static/js/main.3434a1b7.js"
+    "static/js/main.dde9250f.js"
   ]
 }
