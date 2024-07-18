@@ -12,8 +12,7 @@ const servicesData = [
   {
     id: 2,
     title: "DATA ANALYTICS",
-    description:
-      "With data analysis we provide informed decision of a business based on research, Identifying market trends, We give customer insights, Financial Monitoring by tracking performance , manage budgets, focus revenue and identify where cost can be reduced using AI tools.",
+    description: "In data analysis we provide informed decision of a business based on research, Identifying market trends, We give customer insights, Financial Monitoring by tracking performance , Sales Analysis, Content analysis and strategy, manage budgets, focus revenue and identify where cost can be reduced using AI tools. We do also Big Data and BI together with Data Entry for businesses.",
     image: `${process.env.PUBLIC_URL}/images/dataanalytics.png`
   },
   {
