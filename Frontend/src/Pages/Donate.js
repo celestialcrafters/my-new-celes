@@ -88,8 +88,7 @@ const Donate = () => {
               Third World Countries, we are dedicated to addressing the
               significant under-representation of women in the tech sector. Our
               mission is to narrow this gender gap by gradually introducing
-              young girls to the technology field from an early age,
-              particularly here in Kenya.
+              young girls to the technology field from an early age.
             </p>
             <h3 className="text-[#0337CB] font-600 text-2xl pb-2">
               The donations will directly support:

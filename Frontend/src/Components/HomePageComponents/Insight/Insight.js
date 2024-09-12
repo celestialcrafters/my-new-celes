@@ -15,14 +15,14 @@ const Explore = () => {
       imgUrl: process.env.PUBLIC_URL + "/Assets/aboutus2.jpg",
       id: 2,
       title: "Empowering Women in Tech.",
-      text: "Celestial Crafters is not just a tech company; it's a movement. Our commitment to empowering women in tech goes beyond our projects.",
+      text: " Our commitment to empowering women in tech goes beyond our projects.",
       buttonText: "Read More",
     },
     {
       imgUrl:process.env.PUBLIC_URL +  "/Assets/aboutus3.jpg",
       id: 3,
       title: "Beyond the Code.",
-      text: "Success for us is measured beyond lines of code. We actively contribute to local economies, provide mentorship, and engage in philanthropy.",
+      text: "We actively contribute to local economies, provide mentorship, and engage in philanthropy.",
       buttonText: "Read More",
     },
   ];

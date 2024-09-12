@@ -13,7 +13,7 @@ const LandPage = () => {
         </svg>
       </div>
       <p className="text-left mt-50 text-white">
-      At Celestial Crafters, we're more than just a tech company – we're a catalyst for change. With a mission to drive innovation and promote diversity, inclusivity, and women's empowerment, we're reshaping the tech landscape. Our core values of innovation, integrity, teamwork, sustainability, and customer satisfaction guide us in everything we do. From developing cutting-edge solutions to inspiring the next generation of female leaders in STEM, we're committed to making a positive impact.
+     With a mission to drive innovation and promote diversity, inclusivity and women's empowerment. We are reshaping the tech landscape. 
       </p>
       <Insight />
     </div>

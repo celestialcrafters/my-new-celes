@@ -48,7 +48,7 @@ const StartProject = () => {
     },
     {
       url: `${process.env.PUBLIC_URL}/steps/04.png`,
-      desc: "We will track key performance indicators and milestones to ensure alignment with project objectives. Evaluate outcomes and impacts, and make adjustments as necessary to optimise project success.",
+      desc: "We will track key performance indicators and milestones to ensure alignment with project objectives.",
       position: { top: "50%", right: "0%" },
     },
   ];

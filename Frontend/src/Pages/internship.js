@@ -9,43 +9,25 @@ const Internship = () => {
       id: 1,
       title: "SOFTWARE DEVELOPMENT",
     },
-    {
-      id: 2,
-      title: "DATA ANALYTICS",
-    },
+   
     {
       id: 3,
       title: "APP DEVELOPMENT",
     },
-    {
-      id: 4,
-      title: "CYBERSECURITY",
-    },
+    
     {
       id: 5,
-      title: "UIUX DESIGN",
+      title: "UI/UX DESIGN",
     },
     {
       id: 6,
-      title: "DIGITAL MARKETING",
+      title: "BLOCKCHAIN",
     },
   ];
   const servicesData2 = [
     {
       id: 8,
-      title: "SOCIAL MEDIA MANAGEMENT",
-    },
-    {
-      id: 9,
-      title: "GRAPHICS AND DESIGN",
-    },
-    {
-      id: 10,
-      title: "FINANCE AND ACCOUNTING",
-    },
-    {
-      id: 11,
-      title: "HUMAN RESOURCE MANAGEMENT",
+      title: "ARTIFICIAL INTELLIGENCE",
     },
   ];
   const reasons = [
@@ -134,9 +116,7 @@ const Internship = () => {
             starting from founders, investors and other Industry professionals
             apply now and get an exclusive one on one Q&A Live session with this
             professionals. Are you ready to kickstart your career with hands-on
-            experience and professional development. Join us and be a part of a
-            dynamic team that's shaping the future. Our projects are beginner
-            friendly to Expert based.
+            experience and professional development.
           </p>
           <div className="mt-20">
             <h3 className="uppercase text-2xl">

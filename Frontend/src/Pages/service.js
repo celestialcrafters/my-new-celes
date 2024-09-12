@@ -7,55 +7,35 @@ const servicesData = [
     title: "WEBSITE DEVELOPMENT",
     description:
       "We build static websites with fixed content, dynamic websites that update with new information, and e-commerce websites for online shopping. Development also involves writing the code, setting up databases, and integrating third-party tools like payment gateways. Quality assurance is done to ensure the website works correctly on different devices and browsers. After launching the site, developers provide ongoing maintenance, updates, and support to keep it running smoothly and securely. Other services include search engine optimization (SEO) to improve the site's visibility, content management system (CMS) integration for easy updates, and web hosting setup. In essence, website development services cover all aspects of bringing a website to life and ensuring it performs well.",
-    image: `${process.env.PUBLIC_URL}/images/softwaredev.png`
-  },
-  {
-    id: 2,
-    title: "DATA ANALYTICS",
-    description: "In data analysis we provide informed decision of a business based on research, Identifying market trends, We give customer insights, Financial Monitoring by tracking performance , Sales Analysis, Content analysis and strategy, manage budgets, focus revenue and identify where cost can be reduced using AI tools. We do also Big Data and BI together with Data Entry for businesses.",
-    image: `${process.env.PUBLIC_URL}/images/dataanalytics.png`
+    image: `${process.env.PUBLIC_URL}/images/softwaredev.png`,
   },
   {
     id: 3,
     title: "MOBILE APP DEVELOPMENT",
     description:
       "Mobile App Development services covers both front-end and back-end development, including native app development for iOS and Android, as well as cross-platform solutions using frameworks like React Native and Flutter. App development services include integration with third-party APIs, ensuring seamless connectivity with other software and services. Rigorous quality assurance and testing are conducted to identify and fix bugs, ensuring a smooth user experience. Deployment services handle the submission and publication of the app on app stores, while post-launch support and maintenance involve regular updates, performance monitoring, and addressing user feedback.",
-    image: `${process.env.PUBLIC_URL}/images/projectmanagemnet.png`
-  },
-  {
-    id: 4,
-    title: "CYBERSECURITY",
-    description:
-      "Cybersecurity services encompass a comprehensive range of activities aimed at protecting systems, networks, and data from cyber threats. These services include risk assessment and management, which involve identifying and evaluating potential security risks, followed by implementing strategies to mitigate them. Vulnerability assessment and penetration testing are conducted to identify and exploit security weaknesses before malicious actors can. Network security involves configuring firewalls, intrusion detection systems, and secure network architecture. Endpoint security focuses on protecting devices such as computers and smartphones from threats. Identity and access management ensure that only authorized users have access to sensitive information. Incident response and recovery services help organizations quickly respond to and recover from security breaches. Together, these services create a robust defense against cyberattacks and data breaches.",
-    image: `${process.env.PUBLIC_URL}/images/cybersecurity.png`
+    image: `${process.env.PUBLIC_URL}/images/projectmanagemnet.png`,
   },
   {
     id: 5,
     title: "UI/UX DESIGN",
     description:
       "Our broad Services includes landing pages, which are designed to capture leads and promote specific products or services, and launch pages, which announce new product releases or events. UI/UX design encompasses the creation of dashboards for data visualization, user profiles for personalized experiences, and e-commerce product pages for online shopping. Other designs include login and registration forms, onboarding screens for new users, settings and preferences pages, and help and support interfaces. Designers also work on creating interactive prototypes, mobile app interfaces, and responsive web designs that adapt to different devices and screen sizes. We also do responsive Website Design and Mobile App Designs. Each of these designs plays a crucial role in ensuring a cohesive and user-friendly digital.",
-      image: `${process.env.PUBLIC_URL}/images/uiux.png`,
+    image: `${process.env.PUBLIC_URL}/images/uiux.png`,
   },
   {
     id: 6,
-    title: "DIGITAL MARKETING",
+    title: "ARTIFICIAL INTELLIGENCE",
     description:
-      "Elevate your online presence with our comprehensive digital marketing solutions. From search engine optimization (SEO) to targeted social media advertising, we employ cutting-edge strategies to boost your visibility and drive conversions. Let us help you navigate the digital landscape and reach your target audience with precision and impact.",
-      image: `${process.env.PUBLIC_URL}/images/digitalmarketing.png`,
+      "Elevate your online presence with our comprehensive automated AI solutions. From model training, chatbots to customized solutions.",
+    image: `${process.env.PUBLIC_URL}/images/digitalmarketing.png`,
   },
   {
     id: 7,
-    title: "SOCIAL MEDIA MANAGEMENT",
+    title: "BLOCKCHAIN",
     description:
-      "Harness the power of social media to connect, engage, and grow your audience. Our expert social media management team crafts tailored content, implements strategic campaigns, and monitors analytics to ensure your brand stands out in the crowded digital sphere. Whether it's community building or influencer partnerships, we'll help you cultivate meaningful connections that drive results.",
-      image: `${process.env.PUBLIC_URL}/images/socialmedia.png`,
-    },
-  {
-    id: 8,
-    title:"GRAPHICS AND DESIGN",
-    description:
-      "Our broad range of services branding and identity design, such as logo creation, brand guidelines, business cards, and stationery. Marketing and advertising design covers brochures, flyers, posters, social media graphics, email templates, and banner ads. Print design involves magazine layouts, book covers, packaging, annual reports, and menus. Web and digital design services include website design, user interface (UI) and user experience (UX) design, mobile app design, infographics, and e-books. Environmental design focuses on signage, trade show booths, exhibition displays, wall murals, and interior graphics. Illustration and art services provide custom illustrations, icons, infographics, and character design. Motion graphics include animation, video editing, GIF creation, and title sequences.",
-      image: `${process.env.PUBLIC_URL}/images/graphic10.png`,
+      "Harness the unique features of blockchain technology to solve problems and create opportunities. ",
+    image: `${process.env.PUBLIC_URL}/images/socialmedia.png`,
   },
 ];
 

@@ -9,13 +9,13 @@ const mission = [
   {
     topic: "OUR VISION",
     text1:
-      "We envision a world where gender disparities in tech is a thing of the past. We foresee a Kenya where technology is not only 15% occupied by women but an increase with at least 10% in the next 3 years. We envision a Kenya where women are not only economically empowered but also have a voice that will impact upcoming generations of women that are able to speak up for themselves without fear of expression or judgement.",
+      "We envision a world where gender disparities in tech is a thing of the past. We foresee a Kenya where technology is not only 15% occupied by women but an increase with at least 10% in the next 3 years.",
     img: `${process.env.PUBLIC_URL}/Assets/BigImages/vision.png`,
   },
   {
     topic: "OUR MISSION",
     text1:
-      "Celestial Crafters' mission is to drive innovation in the technology industry while fostering diversity, inclusivity, and empowerment. We are committed to promoting equality and reducing inequalities by providing equal opportunities for women, individuals from the LGBTQIA+ community, and persons with disabilities. Through our core values of innovation, integrity, teamwork, and sustainability, we strive to inspire the next generation of leaders while breaking down barriers and creating a more equitable and inclusive world.",
+      "Celestial Crafters' mission is to drive innovation in the technology industry while fostering diversity, inclusivity, and empowerment. We are committed to promoting equality and reducing inequalities by providing equal opportunities for women and persons with disabilities. Through our core values of innovation, integrity, teamwork, and sustainability, we strive to inspire the next generation of leaders while breaking down barriers and creating a more equitable and inclusive world.",
   img: `${process.env.PUBLIC_URL}/Assets/BigImages/mission.png`
   },
 ];
@@ -30,13 +30,13 @@ const about = [
   {
     topic: "Empowering Women in Tech.",
     text1:
-      "Celestial Crafters is not just a tech company; it's a movement. Our commitment to empowering women in tech goes beyond our projects; it's a part of our core values",
+      "Our commitment to empowering women in tech goes beyond our projects; it's a part of our core values",
   img: `${process.env.PUBLIC_URL}/Assets/aboutus2.jpg`
   },
   {
     topic: "Beyond the Code.",
     text1:
-      "Success for us is measured beyond lines of code. We actively contribute to local economies, provide mentorship, and engage in philanthropy.",
+      "We actively contribute to local economies, provide mentorship, and engage in philanthropy.",
      img: `${process.env.PUBLIC_URL}/Assets/aboutus3.jpg`
   },
 ];
@@ -78,8 +78,7 @@ export default function About() {
             trusted platform for creativity.
           </p>
           <p>
-            At Celestial Crafters, we pride ourselves in giving you our unique
-            craft. Our team is committed to delivering excellence, ensuring you
+            Our team is committed to delivering excellence, ensuring you
             experience.
           </p>
         </div>

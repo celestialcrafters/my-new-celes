@@ -13,7 +13,7 @@ export const listData =[
     },
     {
         topic: "Commitment to Quality",
-        explanation:" Excellence is our benchmark. We pride ourselves on the quality of our work, from the strategies we develop to the support we provide."
+        explanation:"We pride ourselves on the quality of our work, from the strategies we develop to the support we provide."
     },
     {
         topic: "Transparent Communication",
@@ -25,6 +25,6 @@ export const listData =[
     },
     {
         topic: "Results-Driven",
-        explanation:" At the end of the day, results matter. We're focused on delivering outcomes that make a tangible difference to your bottom line, your operational efficiency, and your market position."
+        explanation:" 're focused on delivering outcomes that make a tangible difference to your bottom line, your operational efficiency, and your market position."
     },
 ]

@@ -65,7 +65,11 @@ const Footer = () => {
     <div className="bg-black px-4 sm:!px-10 !py-10 overflow-hidden">
       <div className="flex lg:justify-between pb-10 flex-wrap justify-start gap-7">
         <div className="text-white">
-        <img className="w-20" src={`${process.env.PUBLIC_URL}/Assets/icons/logo.png`} alt="logo" />
+          <img
+            className="w-20"
+            src={`${process.env.PUBLIC_URL}/Assets/icons/logo.png`}
+            alt="logo"
+          />
           <div className="flex flex-col gap-1">
             {ContactInfo.map((item, index) => {
               return (
@@ -94,7 +98,10 @@ const Footer = () => {
             About Us
           </Link>
           <p className="pt-3">
-          At Celestial Crafters, we're more than just a tech company – we're a catalyst for change. With a mission to drive innovation and promote diversity, inclusivity, and women's empowerment, we're reshaping the tech landscape. Our core values of innovation, integrity, teamwork, sustainability, and customer satisfaction guide us in everything we do. From developing cutting-edge solutions to inspiring the next generation of female leaders in STEM, we're committed to making a positive impact. Join us on our journey to bridge the gender gap in tech and create a more equitable and vibrant future for all.
+            From developing cutting-edge solutions to inspiring the next
+            generation of female leaders in STEM, we're committed to making a
+            positive impact. Join us on our journey to bridge the gender gap in
+            tech and create an equitable and vibrant future for all.
           </p>
         </div>
         <div className="text-white flex flex-col gap-2">
@@ -118,19 +125,19 @@ const Footer = () => {
               to="/services"
               className="block hover:text-blue-700 hover:transition-all hover:duration-100"
             >
-              Data Analytics
-            </Link>
-            <Link
-              to="/services"
-              className="block hover:text-blue-700 hover:transition-all hover:duration-100"
-            >
               UI/UX Design
             </Link>
             <Link
               to="/services"
               className="block hover:text-blue-700 hover:transition-all hover:duration-100"
             >
-              Graphic Design
+              Artificial Intelligence
+            </Link>
+            <Link
+              to="/services"
+              className="block hover:text-blue-700 hover:transition-all hover:duration-100"
+            >
+              Blockchain
             </Link>
             <Link
               to="/services"
@@ -165,7 +172,7 @@ const Footer = () => {
         <div className="flex items-center">
           <img src={Copyright} alt="Copyright" />
           <p className="text-white ml-2">
-            Celestial Crafters 2024 . All rights reserved 
+            Celestial Crafters 2024 . All rights reserved
           </p>
         </div>
         <div>|</div>
