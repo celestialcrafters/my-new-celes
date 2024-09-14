@@ -176,10 +176,11 @@ const StartProject = () => {
           </div>
         </div>
       </div>
-
+      
       <div>
         <h1 className="text-white text-center text-2xl  sm:text-5xl py-4">
-          Plan Your Project With<span className="text-blue-700"> Us</span>
+          Not Sure Where to Begin?
+          <span className="text-blue-700">We got you! </span>
         </h1>
         <ContactForm />
       </div>

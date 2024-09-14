@@ -54,11 +54,10 @@ const Donate = () => {
                 Our Impact{" "}
               </h2>
               <p>
-                Your donation to Celestial Crafters isn't just financial
-                support; it's an investment in empowering women in tech and
-                young girls to discover the tech industry. It's a tangible step
-                towards breaking down barriers and creating a more inclusive and
-                equitable future where every woman can thrive.
+                Your donation is more than just financial support—it's an
+                opportunity to change lives. By empowering women and girls in
+                tech, you're breaking barriers and building a future where women
+                lead in innovation.
               </p>
             </div>
             <div className="bg-[#000033] p-5 ">
@@ -66,10 +65,9 @@ const Donate = () => {
                 Our mission{" "}
               </h2>
               <p>
-                At Celestial Crafters, we're committed to driving innovation and
-                fostering diversity in the tech industry. Our mission is to
-                empower women to become leaders in technology and break the
-                gender barriers that have long existed in the field.
+                We are committed to closing the gender gap in tech. With our
+                team from third-world countries, we’re focused on inspiring
+                young girls and equipping women to become tech leaders.
               </p>
             </div>
           </div>
@@ -84,52 +82,31 @@ const Donate = () => {
         <article className="bg-[#000033] p-5 sm:p-10 ">
           <div className="flex flex-col gap-4">
             <p className="pb-3">
-              As a Social Impact Company, with 99% of our team originating from
-              Third World Countries, we are dedicated to addressing the
-              significant under-representation of women in the tech sector. Our
-              mission is to narrow this gender gap by gradually introducing
-              young girls to the technology field from an early age.
+              Your Donation Makes a Difference:
+              <li>
+                Inspiring Girls to Explore Tech: Through school visits across
+                Kenya, we provide mentorship and essential supplies, igniting a
+                passion for technology in young girls.
+              </li>{" "}
+              <li>
+                Building Future Women Leaders: We offer continuous training and
+                mentorship to women at Celestial Crafters, helping them stay at
+                the cutting edge of tech.{" "}
+              </li>
+              <li>
+                Supporting Young Women in Tech Education: We mentor students in
+                tech, providing community, resources, and career-building
+                opportunities.{" "}
+              </li>
+              Together, We Can Achieve More Your contribution directly fuels
+              change.
             </p>
             <h3 className="text-[#0337CB] font-600 text-2xl pb-2">
-              The donations will directly support:
+              Help us shape the future of women in tech and create lasting
+              impact.
             </h3>
-            <ol className="flex flex-col gap-10 list-disc ">
-              <li>
-                Introducing young girls to the technology industry: We plan to
-                visit various primary and secondary schools across Kenya to
-                inspire young girls and women about the tech industry. During
-                these mentorship tours, we will distribute sanitary towels,
-                stationery, refreshments, and Celestial Crafters printed
-                T-shirts. Our goal is to create a lasting impact by driving
-                positive change and narrowing the gender gap in tech, paving the
-                way for future generations of female leaders.
-              </li>
-              <li>
-                Continuous growth and building of our women at Celestial
-                Crafters: We aim to elevate the women at Celestial Crafters by
-                up-skilling them, keeping them up to date with the technology
-                trends, enrolling them to training and mentorship programs and
-                providing stipends as a token of appreciation for the good work
-                that they do at Celestial Crafters.
-              </li>
-              <li>
-                Mentoring young women studying tech-related courses: We aim to
-                support young women currently pursuing tech education by
-                offering mentorship and creating a sense of community. This
-                initiative will provide hope and foster a sense of belonging as
-                we navigate the challenges together. We will also offer sanitary
-                towels, refreshments, Celestial Crafters printed T-shirts,
-                stationery, and valuable networking opportunities with our women
-                team at Celestial Crafters and other partners and collaborators.
-              </li>
-              <li>
-                The dedicated women at Celestial Crafters, work voluntarily to
-                drive the change. Your contributions will enable us to provide
-                essential resources and opportunities for women to excel in
-                tech. Support our movement to eliminate gender stereotypes in
-                the technology sector. DONATE TODAY!
-              </li>
-            </ol>
+            
+        
           </div>
         </article>
       </section>
@@ -267,10 +244,10 @@ const Donate = () => {
         </div>
       </div>
       <img
-           src={`${process.env.PUBLIC_URL}/serviceIcon/Line%203.png`}
-            alt="line"
-            className="h-[4px] w-full  md:w-[50%] lg:mt-20 lg:mb-3 md:mt-10 mt-10  mx-auto"
-          />
+        src={`${process.env.PUBLIC_URL}/serviceIcon/Line%203.png`}
+        alt="line"
+        className="h-[4px] w-full  md:w-[50%] lg:mt-20 lg:mb-3 md:mt-10 mt-10  mx-auto"
+      />
     </div>
   );
 };

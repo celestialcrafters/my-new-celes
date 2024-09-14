@@ -24,20 +24,20 @@ const about = [
   {
     topic: "Our Unique Culture.",
     text1:
-      "With our diverse team spanning the globe, Celestial Crafters leverages a rich tapestry of perspectives, experiences, and cultural insights. Our global presence grants us a unique advantage in understanding and catering to the diverse needs of clients worldwide. By tapping into the collective expertise of team members from Afghanistan to the United States, South Africa to India, Malawi to Ghana, Nigeria to Kenya, we offer innovative solutions that transcend geographical boundaries. This global perspective not only enriches our creativity and problem-solving capabilities but also enables us to navigate cultural nuances and market dynamics with ease. Ultimately, our diverse team empowers us to deliver tailor-made solutions that drive success and create impact on a global scale.",
-    img: `${process.env.PUBLIC_URL}/Assets/aboutus1.jpg`
+      "our culture is defined by a commitment to empowering women and youth in tech through innovation, collaboration, and social impact. As a women-only, youth-driven tech company. Our team thrives on pushing the boundaries of technology with sustainable, eco-friendly and socially responsible solutions while creating transformative digital experiences. We take pride in our craftsmanship and prioritize Mentorship, Partnerships, Continuous Learning, and Adaptability positioning us as a forward-thinking, socially conscious leader in the tech industry.",
+    img: `${process.env.PUBLIC_URL}/Assets/aboutus1.jpg`,
   },
   {
     topic: "Empowering Women in Tech.",
     text1:
       "Our commitment to empowering women in tech goes beyond our projects; it's a part of our core values",
-  img: `${process.env.PUBLIC_URL}/Assets/aboutus2.jpg`
+    img: `${process.env.PUBLIC_URL}/Assets/aboutus2.jpg`,
   },
   {
     topic: "Beyond the Code.",
     text1:
       "We actively contribute to local economies, provide mentorship, and engage in philanthropy.",
-     img: `${process.env.PUBLIC_URL}/Assets/aboutus3.jpg`
+    img: `${process.env.PUBLIC_URL}/Assets/aboutus3.jpg`,
   },
 ];
 const lunchData1 = [

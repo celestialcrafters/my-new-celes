@@ -44,10 +44,10 @@ export default function ContactForm() {
     <div className="form-parts bg-opacity-50 backdrop-filter backdrop-blur-2xl !py-10 grid grid-cols-1 lg:grid-cols-2 justify-center items-center !w-[90%] mx-auto px-3 sm:px-6 my-14 ">
       <div className="form-parts-first">
         <h1 className="!text-4xl font-[600] text-center">
-          Begin your <span>PROJECT</span> with Celestial Crafters.
+          Book a free 30-minutes <span>consultation</span>with us.
         </h1>
         <p className="!text-white text-center">
-          Transform your vision into reality.{" "}
+           To clarify your needs. Let's Create Together!.{" "}
         </p>
       </div>
       <Formik
@@ -102,8 +102,7 @@ export default function ContactForm() {
 
             {serverState && (
               <div className={!serverState.ok ? "errorMsg" : ""}>
-
-            <p className="text-white">{serverState.msg}</p>    
+                <p className="text-white">{serverState.msg}</p>
               </div>
             )}
           </Form>

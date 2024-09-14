@@ -7,7 +7,7 @@ const Hero = () => {
           <p className="pb-2 !text-3xl">We are</p>
           <h2 className="pb-2 !text-3xl topIntro">Celestial Crafters,</h2>
           <p className="!text-3xl">
-          we drive innovation in the tech industry while fostering diversity, inclusivity, and women's empowerment.
+          we drive innovation in the tech industry while fostering diversity, inclusivity and women's empowerment.
           </p>
         </div>
       </section>

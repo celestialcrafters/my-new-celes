@@ -45,7 +45,7 @@ const Nav = () => {
             { link: "/about", name: "About" },
             { link: "services", name: "Services" },
             { link: "work", name: "Our Work" },
-            { link: "startProject", name: "Start Project" },
+            { link: "startProject", name: "Request Services" },
           ].map((item, index) => {
             return (
               <li key={index + "link"}>
