@@ -6,21 +6,21 @@ const servicesData = [
     id: 1,
     title: "WEBSITE DEVELOPMENT",
     description:
-      "We build static websites with fixed content, dynamic websites that update with new information, and e-commerce websites for online shopping. Development also involves writing the code, setting up databases, and integrating third-party tools like payment gateways. Quality assurance is done to ensure the website works correctly on different devices and browsers. After launching the site, developers provide ongoing maintenance, updates, and support to keep it running smoothly and securely. Other services include search engine optimization (SEO) to improve the site's visibility, content management system (CMS) integration for easy updates, and web hosting setup. In essence, website development services cover all aspects of bringing a website to life and ensuring it performs well.",
+      "We build static websites with fixed content, dynamic websites that update with new information, and e-commerce websites for online shopping. Development also involves writing the code, setting up databases and integrating third-party tools like payment gateways. ",
     image: `${process.env.PUBLIC_URL}/images/softwaredev.png`,
   },
   {
     id: 3,
     title: "MOBILE APP DEVELOPMENT",
     description:
-      "Mobile App Development services covers both front-end and back-end development, including native app development for iOS and Android, as well as cross-platform solutions using frameworks like React Native and Flutter. App development services include integration with third-party APIs, ensuring seamless connectivity with other software and services. Rigorous quality assurance and testing are conducted to identify and fix bugs, ensuring a smooth user experience. Deployment services handle the submission and publication of the app on app stores, while post-launch support and maintenance involve regular updates, performance monitoring, and addressing user feedback.",
+      "Mobile App Development services covers both front-end and back-end development, including native app development for iOS and Android, as well as cross-platform solutions using frameworks like React Native and Flutter. App development services include integration with third-party APIs, ensuring seamless connectivity with other software and services. Rigorous quality assurance and testing are conducted to identify and fix bugs, ensuring a smooth user experience.",
     image: `${process.env.PUBLIC_URL}/images/projectmanagemnet.png`,
   },
   {
     id: 5,
     title: "UI/UX DESIGN",
     description:
-      "Our broad Services includes landing pages, which are designed to capture leads and promote specific products or services, and launch pages, which announce new product releases or events. UI/UX design encompasses the creation of dashboards for data visualization, user profiles for personalized experiences, and e-commerce product pages for online shopping. Other designs include login and registration forms, onboarding screens for new users, settings and preferences pages, and help and support interfaces. Designers also work on creating interactive prototypes, mobile app interfaces, and responsive web designs that adapt to different devices and screen sizes. We also do responsive Website Design and Mobile App Designs. Each of these designs plays a crucial role in ensuring a cohesive and user-friendly digital.",
+      "We create interactive prototypes, mobile app interfaces, and responsive web designs that adapt to different devices and screen sizes. We also do responsive Website Design and Mobile App Designs. Each of these designs plays a crucial role in ensuring a cohesive and user-friendly digital experience.",
     image: `${process.env.PUBLIC_URL}/images/uiux.png`,
   },
   {

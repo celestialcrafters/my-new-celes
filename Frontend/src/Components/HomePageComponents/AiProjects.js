@@ -5,30 +5,30 @@ const AiProjects = () => {
       id: 1,
       title: "AI Powered Healthcare Solution",
       category: "Software Development",
-      startYear: 2024,
+      
       description:
         "We developed an AI-powered healthcare solution to address the unique challenges faced by healthcare providers in Africa. Leveraging machine learning algorithms, the platform streamlines patient care, improves diagnosis accuracy, and optimizes resource allocation.",
-      timeframe: "December 2023 - January 2024",
+      
       url: `${process.env.PUBLIC_URL}/ourWork/work1.jpg`,
     },
     {
       id: 2,
       title: "Virtual Assistant Integration",
       category: "Software Development",
-      startYear: 2024,
+      
       description:
         "Implemented a virtual assistant integration for a leading e-commerce platform, enhancing customer engagement and streamlining support services. Leveraged natural language processing and machine learning algorithms to develop an intelligent assistant capable of understanding and responding to customer inquiries in real-time.",
-      timeframe: "July 2023 - May 2024",
+      
       url: `${process.env.PUBLIC_URL}/ourWork/work2.jpg`,
     },
     {
       id: 3,
       title: "Predictive Maintenance System",
       category: "Software Development",
-      startYear: 2024,
+     
       description:
         "Developed a predictive maintenance system for a manufacturing company to optimize equipment uptime and reduce operational costs. Utilized sensor data analysis and predictive analytics to forecast equipment failures before they occur, enabling proactive maintenance and minimizing downtime.",
-      timeframe: "October 2023 - August 2024",
+      
       url: `${process.env.PUBLIC_URL}/ourWork/work3.jpg`,
     },
   ];

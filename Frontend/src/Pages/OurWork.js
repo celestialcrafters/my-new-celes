@@ -3,74 +3,62 @@ import Modal from "../Components/common/Modal";
 import { Link } from "react-router-dom";
 import Hero from "../Components/common/Hero";
 import ContactForm from "../Components/common/Form/contactForm";
+
 const softwareDevelopmentProjects = [
   {
     id: 1,
     title: "AI Powered Healthcare Solution",
     category: "Software Development",
-    startYear: 2024,
     description:
       "We developed an AI-powered healthcare solution to address the unique challenges faced by healthcare providers in Africa. Leveraging machine learning algorithms, the platform streamlines patient care, improves diagnosis accuracy, and optimizes resource allocation.",
-    timeframe: "December 2023 - January 2024",
     url: `${process.env.PUBLIC_URL}/ourWork/work1.jpg`,
   },
   {
     id: 2,
     title: "Virtual Assistant Integration",
     category: "Software Development",
-    startYear: 2024,
     description:
       "Implemented a virtual assistant integration for a leading e-commerce platform, enhancing customer engagement and streamlining support services. Leveraged natural language processing and machine learning algorithms to develop an intelligent assistant capable of understanding and responding to customer inquiries in real-time.",
-    timeframe: "July 2023 - April 2024",
     url: `${process.env.PUBLIC_URL}/ourWork/work2.jpg`,
   },
   {
     id: 3,
     title: "Predictive Maintenance System",
     category: "Software Development",
-    startYear: 2024,
     description:
       "Developed a predictive maintenance system for a manufacturing company to optimize equipment uptime and reduce operational costs. Utilized sensor data analysis and predictive analytics to forecast equipment failures before they occur, enabling proactive maintenance and minimizing downtime.",
-    timeframe: "October 2023 - march 2024",
     url: `${process.env.PUBLIC_URL}/ourWork/work3.jpg`,
   },
   {
     id: 4,
     title: "Social Media App",
     category: "Mobile Development",
-    startYear: 2024,
     description:
       "Developed a social media app with real-time messaging and post sharing features.",
-    timeframe: "December 2023 - January 2024",
     url: `${process.env.PUBLIC_URL}/ourWork/social.jpg`,
   },
   {
     id: 5,
     title: "Finance Management System",
     category: "Software Development",
-    startYear: 2024,
     description:
       "Built a comprehensive finance management system for tracking expenses and budgeting.",
-    timeframe: "September 2023 - February 2024",
     url: `${process.env.PUBLIC_URL}/ourWork/dataanalyshero.jpg`,
   },
   {
     id: 6,
     title: "AI Chatbot",
     category: "Artificial Intelligence",
-    startYear: 2024,
     description:
       "Implemented an AI-powered chatbot for customer support and assistance.",
-    timeframe: "August 2023 - April 2024",
-    url: `${process.env.PUBLIC_URL}/ourWork/machine.jpg`                         ,
-  }
+    url: `${process.env.PUBLIC_URL}/ourWork/machine.jpg`,
+  },
 ];
+
 const OurWork = () => {
   const [showProfile, setShowProfile] = useState(false);
   const [categoryFilter, setCategoryFilter] = useState("");
-  const [yearFilter, setYearFilter] = useState("");
   const [tempCategoryFilter, setTempCategoryFilter] = useState("");
-  const [tempYearFilter, setTempYearFilter] = useState("");
   const [filterType, setFilterType] = useState("category"); // Default filter type
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 3;
@@ -78,14 +66,9 @@ const OurWork = () => {
   const categories = [
     ...new Set(softwareDevelopmentProjects.map((project) => project.category)),
   ];
-  const years = [
-    ...new Set(softwareDevelopmentProjects.map((project) => project.startYear)),
-  ];
+
   const filteredProjects = softwareDevelopmentProjects.filter((project) => {
-    return (
-      (!categoryFilter || project.category === categoryFilter) &&
-      (!yearFilter || parseInt(project.startYear) === parseInt(yearFilter))
-    );
+    return !categoryFilter || project.category === categoryFilter;
   });
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -111,32 +94,32 @@ const OurWork = () => {
 
   const handleResetFilters = () => {
     setCategoryFilter("");
-    setYearFilter("");
     setCurrentPage(1);
     setShowProfile(false);
   };
 
   const handleApplyFilters = () => {
     setCategoryFilter(tempCategoryFilter);
-    setYearFilter(tempYearFilter);
     setCurrentPage(1);
     setShowProfile(false);
   };
-
 
   return (
     <div className="bg-[#000] text-white">
       <Hero />
       <section className="flex justify-between gap-1 w-full items-center px-4 sm:!px-10 pb-2">
-        <p className="capitalize text-gray-300 text-sm sm:text-md w-full flex-1   ">
+        <p className="capitalize text-gray-300 text-sm sm:text-md w-full flex-1">
           Explore our work from talented women across Africa
         </p>
         <button
           className="flex gap-2 px-3 sm:flex-[0.2] py-2 bg-transparent border-[2px] items-center !border-blue-700 justify-center text-white rounded-lg"
           onClick={() => setShowProfile(!showProfile)}
         >
-          <p className="">Filter </p>
-          <img src={`${process.env.PUBLIC_URL}/Assets/icons/filter.png`} alt="filter icon" />
+          <p>Filter</p>
+          <img
+            src={`${process.env.PUBLIC_URL}/Assets/icons/filter.png`}
+            alt="filter icon"
+          />
         </button>
       </section>
       <section className="relative">
@@ -146,49 +129,14 @@ const OurWork = () => {
               <div>
                 <button
                   className="text-gray-300"
-                  onClick={() => {
-                    setFilterType("category");
-                  }}
+                  onClick={() => setFilterType("category")}
                 >
                   Category
-                </button>
-              </div>
-              <div>
-                <button
-                  className="text-gray-300"
-                  onClick={() => {
-                    setFilterType("year");
-                  }}
-                >
-                  Year
                 </button>
               </div>
             </div>
             <div className="flex flex-col justify-between gap-[90px] px-1 py-3 sm:p-3">
               <div>
-                {filterType === "year" && (
-                  <div>
-                    {years.map((year) => (
-                      <label
-                        key={year}
-                        className="flex items-center text-gray-300"
-                      >
-                        <input
-                          type="checkbox"
-                          value={year}
-                          checked={tempYearFilter === year}
-                          onChange={(e) =>
-                            setTempYearFilter(
-                              e.target.checked ? parseInt(e.target.value) : ""
-                            )
-                          }
-                          className="mr-2"
-                        />
-                        {year}
-                      </label>
-                    ))}
-                  </div>
-                )}
                 {filterType === "category" && (
                   <div>
                     {categories.map((category) => (
@@ -221,7 +169,7 @@ const OurWork = () => {
                   Cancel
                 </button>
                 <button
-                  className="text-white my-1  w-full sm:w-auto text-sm py-[10px] px-7 bg-blue-700 rounded-md flex justify-center"
+                  className="text-white my-1 w-full sm:w-auto text-sm py-[10px] px-7 bg-blue-700 rounded-md flex justify-center"
                   onClick={handleApplyFilters}
                 >
                   Apply
@@ -268,7 +216,7 @@ const OurWork = () => {
                     <h5 className="text-[13px] sm:text-sm">
                       Category : {item.category}
                     </h5>
-                    <h6 className="text-[13px] sm:text-sm">{item.timeframe}</h6>
+                    {/* Removed timeframe */}
                   </div>
                 </div>
                 <p className="text-md">{item.description}</p>
@@ -284,7 +232,7 @@ const OurWork = () => {
       </section>
       <div className="flex justify-end mt-4 px-4 sm:px-10 w-full">
         <button
-          className={`text-white text-sm font-semibold py-3 w-[150px]  bg-blue-700 rounded-md mr-2 ${
+          className={`text-white text-sm font-semibold py-3 w-[150px] bg-blue-700 rounded-md mr-2 ${
             currentPage === 1 ? "hidden" : ""
           }`}
           onClick={() => paginate("prev")}

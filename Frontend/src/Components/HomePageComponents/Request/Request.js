@@ -38,14 +38,14 @@ const Request = () => {
                 to="/startProject"
                 className="px-2 py-3 md:text-sm  bg-blue-700 flex justify-center text-white rounded-3 w-full"
               >
-                Start A Project
+                Request a Service
               </Link>
 
               <Link
                 to="/work"
                 className="border-2 flex  md:text-sm  justify-center border-blue-600 px-2 py-3 bg-transparent text-white rounded-3 w-full"
               >
-                Our Work
+                View Services
               </Link>
             </div>
           </div>
