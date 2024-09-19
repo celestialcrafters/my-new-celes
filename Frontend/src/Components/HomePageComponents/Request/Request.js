@@ -38,7 +38,7 @@ const Request = () => {
                 to="/startProject"
                 className="px-2 py-3 md:text-sm  bg-blue-700 flex justify-center text-white rounded-3 w-full"
               >
-                Request a Service
+                Request Service
               </Link>
 
               <Link
