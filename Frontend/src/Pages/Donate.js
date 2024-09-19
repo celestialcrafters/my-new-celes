@@ -1,6 +1,17 @@
 import "../Components/Donate/Donate.css";
 import { useState } from "react";
 import {
+  FaHandHoldingHeart,
+  FaDonate,
+  FaTshirt,
+  FaLaptop,
+  FaBus,
+  FaGasPump,
+  FaChalkboardTeacher,
+  FaWineGlassAlt,
+} from "react-icons/fa";
+import { GiBookshelf } from "react-icons/gi"; // For stationary
+import {
   FaPhone,
   FaWhatsapp,
   FaChevronDown,
@@ -105,8 +116,6 @@ const Donate = () => {
               Help us shape the future of women in tech and create lasting
               impact.
             </h3>
-            
-        
           </div>
         </article>
       </section>
@@ -200,17 +209,42 @@ const Donate = () => {
           {openIndex === 0 && (
             <div className="px-4 py-2 bg-[#000033]">
               <ol className="flex flex-col gap-2 list-decimal pl-5">
-                <li>Donate Sanitary Towels</li>
-                <li>Donate Stationary</li>
-                <li>Donate Laptops</li>
-                <li>Donate refreshments</li>
-                <li> Donate Celestial Crafters printed T-shirts</li>
-                <li>Donate Softwares</li>
-                <li>
+                <li className="flex items-center gap-2">
+                  <FaHandHoldingHeart />
+                  Donate Sanitary Towels
+                </li>
+                <li className="flex items-center gap-2">
+                  <GiBookshelf />
+                  Donate Stationary
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaLaptop />
+                  Donate Laptops
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaWineGlassAlt />
+                  Donate refreshments
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaTshirt />
+                  Donate Celestial Crafters printed T-shirts
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaDonate />
+                  Donate Softwares
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaBus />
                   Donate Transportation for movement in schools around Kenya
                 </li>
-                <li>Donate Fuel</li>
-                <li>Volunteer for Mentorship</li>
+                <li className="flex items-center gap-2">
+                  <FaGasPump />
+                  Donate Fuel
+                </li>
+                <li className="flex items-center gap-2">
+                  <FaChalkboardTeacher />
+                  Volunteer for Mentorship
+                </li>
               </ol>
 
               <h3 className="text-lg mt-2">
