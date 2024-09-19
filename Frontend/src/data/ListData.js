@@ -16,15 +16,7 @@ export const listData =[
         explanation:"We pride ourselves on the quality of our work, from the strategies we develop to the support we provide."
     },
     {
-        topic: "Transparent Communication",
-        explanation:"Open and honest communication is at the heart of our partnerships."
-    },
-    {
         topic: "Long-Term Partnerships",
         explanation:" Our success is measured by your success. We seek to build long-term relationships that support your growth and evolution over time."
-    },
-    {
-        topic: "Results-Driven",
-        explanation:" 're focused on delivering outcomes that make a tangible difference to your bottom line, your operational efficiency, and your market position."
     },
 ]

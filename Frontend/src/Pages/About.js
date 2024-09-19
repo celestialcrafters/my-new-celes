@@ -97,7 +97,7 @@ export default function About() {
                 <img
                   src={item.img}
                   alt="women1"
-                  className={`rounded-2xl object-cover w-full h-full md:h-[320px] md:w-[400px] lg:w-[600px]`}
+                  className={`rounded-2xl object-cover w-full h-full md:h-[320px] md:w-[400px] lg:w-[400px]`}
                 />
               </div>
               <div className="flex-1">
@@ -125,7 +125,7 @@ export default function About() {
           <div className="flex flex-col">
             {listData.map((item, index) => (
               <div className="text-white pb-5" key={index + "choose"}>
-                <h5 className="text-blue-700 pb-3 text-xl font-[600]">
+                <h5 className="text-blue-700 pb-3 text-xl font-[400]">
                   {item.topic}
                 </h5>
                 <p className="text-lg">{item.explanation}</p>
@@ -135,28 +135,32 @@ export default function About() {
         </div>
       </section>
       {/* mission */}
-      <section className="flex flex-col md:flex-row py-10 px-5 items-center justify-center gap-10 ">
+      {/* mission */}
+      <section className="flex flex-col md:flex-row py-10 px-5 items-center justify-center gap-8">
         {mission.map((item, index) => {
           return (
             <div
               key={index + "mission"}
-              className="text-white h-[600px] border mission-vision flex flex-col items-center w-[300px] py-5 px-2 rounded-2xl"
+              className="text-white h-[450px] border mission-vision flex flex-col items-center w-[500px] py-5 px-8 rounded-2xl"
             >
               <img
                 src={item.img}
                 alt="vision"
-                className="mx-auto pb-4 w-[50px]"
+                className="mx-auto pb-3 w-[70px]"
               />
-              <h4>{item.topic}</h4>
-              <p className="text-center">{item.text1}</p>
+              <h4 className="text-lg font-semibold pb-4 text-center">
+                {item.topic}
+              </h4>
+              <p className="text-center leading-6 text-sm">{item.text1}</p>
             </div>
           );
         })}
       </section>
+
       {/* launch celestial crafters */}
       <section className="what-we-do px-4 sm:!px-10 py-10">
         <img
-           src={`${process.env.PUBLIC_URL}/Assets/BigImages/aboutus-big.jpg`} 
+          src={`${process.env.PUBLIC_URL}/Assets/BigImages/aboutus-big.jpg`}
           alt="what we do"
           className="w-full h-[300px] rounded-2xl mx-auto object-cover"
         />
@@ -198,3 +202,9 @@ export default function About() {
     </section>
   );
 }
+
+
+
+
+
+
