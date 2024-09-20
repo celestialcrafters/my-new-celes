@@ -42,7 +42,7 @@ const Request = () => {
               </Link>
 
               <Link
-                to="/work"
+                to="services"
                 className="border-2 flex  md:text-sm  justify-center border-blue-600 px-2 py-3 bg-transparent text-white rounded-3 w-full"
               >
                 View Services

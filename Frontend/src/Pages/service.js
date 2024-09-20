@@ -14,7 +14,7 @@ const servicesData = [
     id: 2,
     title: "MOBILE APP DEVELOPMENT",
     description:
-      "Mobile App Development services covers both front-end and back-end development, including native app development for iOS and Android, as well as cross-platform solutions using frameworks like React Native and Flutter. App development services include integration with third-party APIs, ensuring seamless connectivity with other software and services. Rigorous quality assurance and testing are conducted to identify and fix bugs, ensuring a smooth user experience.",
+      "Mobile App Development services covers both front-end and back-end development, including native app development for iOS and Android, as well as cross-platform solutions using frameworks like React Native and Flutter.",
     image: `${process.env.PUBLIC_URL}/images/projectmanagemnet.png`,
   },
   {
@@ -26,13 +26,20 @@ const servicesData = [
   },
   {
     id: 4,
+    title: "WEB APPLICATIONS",
+    description:
+      "we specialize in creating dynamic and fully responsive web applications tailored to meet the specific needs of businesses and organizations. Our web apps are designed to enhance user experiences, streamline operations, and scale your digital presence.",
+    image: `${process.env.PUBLIC_URL}/images/socialmedia.png`,
+  },
+  {
+    id: 5,
     title: "ARTIFICIAL INTELLIGENCE",
     description:
       "Elevate your online presence with our comprehensive automated AI solutions. From model training, chatbots to customized solutions.",
     image: `${process.env.PUBLIC_URL}/images/digitalmarketing.png`,
   },
   {
-    id: 5,
+    id: 6,
     title: "BLOCKCHAIN",
     description:
       "Harness the unique features of blockchain technology to solve problems and create opportunities.",
