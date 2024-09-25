@@ -84,7 +84,7 @@ const Donate = () => {
           </div>
           <div>
             <img
-              src={`${process.env.PUBLIC_URL}/donate/children.jpg`}
+              src={`${process.env.PUBLIC_URL}/donate/children.jpeg`}
               alt="child"
               className="h-full object-cover w-full"
             />
