@@ -84,10 +84,11 @@ const Donate = () => {
           </div>
           <div>
             <img
-              src={`${process.env.PUBLIC_URL}/donate/children.jpeg`}
+              src={`${process.env.PUBLIC_URL}/donate/children.png`}
               alt="child"
               className="h-full object-cover w-full"
             />
+           
           </div>
         </article>
         <article className="bg-[#000033] p-5 sm:p-10 ">
